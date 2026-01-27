@@ -1,0 +1,8 @@
+# macOS junk (harmless on Windows)
+.DS_Store
+
+# Node / frontend
+node_modules/
+
+# Environment variables
+.env

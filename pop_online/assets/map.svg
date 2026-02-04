@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="100%" height="auto" role="img" aria-label="Illinois regions map">
+  <defs>
+    <!-- 阴影 -->
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+
+    <!-- 轮廓裁剪：所有彩色分区都裁剪在 Illinois 轮廓内 -->
+    <clipPath id="ilClip">
+      <!-- 一个相对更像 Illinois 的轮廓（非地理精确，但观感更接近封面） -->
+      <path id="ilShape"
+        d="M208 36
+           L327 36
+           Q340 38 343 50
+           L351 92
+           L366 117
+           Q370 123 369 130
+           L364 175
+           L390 202
+           Q395 207 393 214
+           L387 261
+           L399 304
+           Q402 314 397 324
+           L380 360
+           L386 405
+           Q388 421 377 434
+           L336 479
+           Q328 488 316 488
+           L222 488
+           Q210 488 206 476
+           L190 426
+           Q188 419 192 412
+           L214 374
+           L204 330
+           Q202 322 206 315
+           L225 282
+           L214 240
+           Q212 232 216 225
+           L236 191
+           L223 142
+           Q221 136 224 130
+           L242 95
+           L220 60
+           Q212 49 208 36
+           Z"/>
+    </clipPath>
+
+    <style>
+      .outline { fill:#cfcfcf; stroke:#3a3a3a; stroke-width:3; }
+      .region { stroke:rgba(255,255,255,.65); stroke-width:2; cursor:pointer; }
+      .region:hover { filter: brightness(1.08); }
+      .label {
+        font: 14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        fill: rgba(255,255,255,.92);
+        pointer-events:none;
+        text-shadow: 0 1px 0 rgba(0,0,0,.35);
+      }
+      .hint {
+        font: 12px ui-sans-serif, system-ui;
+        fill: rgba(255,255,255,.75);
+      }
+    </style>
+  </defs>
+
+  <!-- 背板（你网页背景深色时会很搭；如果你背景不是深色，可以删掉这个 rect） -->
+  <rect x="0" y="0" width="520" height="520" fill="transparent"/>
+
+  <!-- Illinois 底图（阴影 + 轮廓） -->
+  <g filter="url(#softShadow)">
+    <use href="#ilShape" class="outline"/>
+  </g>
+
+  <!-- 彩色分区（全部裁剪在 Illinois 轮廓内） -->
+  <g clip-path="url(#ilClip)">
+
+    <!-- Northwest Illinois -->
+    <path class="region" data-region="Northwest Illinois" fill="#8ea96b"
+      d="M190 60 L315 60 L300 130 L205 130 Z"/>
+    <text class="label" x="205" y="105">Northwest</text>
+
+    <!-- Northeast Illinois -->
+    <path class="region" data-region="Northeast Illinois" fill="#9fb7cc"
+      d="M315 60 L350 60 L362 120 L300 130 Z"/>
+    <text class="label" x="312" y="105">Northeast</text>
+
+    <!-- West Central Illinois -->
+    <path class="region" data-region="West Central Illinois" fill="#3f9b5a"
+      d="M205 130 L300 130 L285 215 L215 215 Z"/>
+    <text class="label" x="212" y="178">West Central</text>
+
+    <!-- Central Illinois -->
+    <path class="region" data-region="Central Illinois" fill="#b7c0b0"
+      d="M300 130 L362 120 L372 212 L285 215 Z"/>
+    <text class="label" x="300" y="178">Central</text>
+
+    <!-- Lower Illinois River -->
+    <path class="region" data-region="Lower Illinois River" fill="#56b16a"
+      d="M215 215 L285 215 L272 305 L220 305 Z"/>
+    <text class="label" x="222" y="265">Lower IL River</text>
+
+    <!-- American Bottom -->
+    <path class="region" data-region="American Bottom" fill="#d3b06b"
+      d="M285 215 L372 212 L383 300 L272 305 Z"/>
+    <text class="label" x="292" y="262">American Bottom</text>
+
+    <!-- Wabash River -->
+    <path class="region" data-region="Wabash River" fill="#c39aa6"
+      d="M272 305 L383 300 L392 405 L300 405 Z"/>
+    <text class="label" x="292" y="360">Wabash River</text>
+
+    <!-- Southern Illinois -->
+    <path class="region" data-region="Southern Illinois" fill="#9a6f86"
+      d="M220 305 L272 305 L300 405 L260 478 L222 478 L200 425 L225 385 Z"/>
+    <text class="label" x="222" y="435">Southern</text>
+  </g>
+
+  <!-- 外圈描边再盖一层，让分区边缘更干净 -->
+  <use href="#ilShape" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="3"/>
+
+  <text class="hint" x="16" y="504">点击彩色区域进入对应 region（名称需与 data.json 完全一致）</text>
+</svg>

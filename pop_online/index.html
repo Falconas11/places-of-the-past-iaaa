@@ -1,11 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  <title>Places of the Past – Online</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Places of the Past - Illinois</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <h1>Places of the Past (2014)</h1>
-  <p>IAAA Internship Project</p>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Places of the Past</h1>
+      <p class="muted">Illinois Map (Click to edit/view)</p>
+    </div>
+    <div class="topbar-actions">
+      <button id="btnReset" class="btn danger" title="Restoring to default data.json">Reset local data</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Select Area</h2>
+      <p class="muted">Simplified SVG</p>
+
+      <div class="map-wrap" id="mapWrap">
+        <!-- Fill in assets/map.svg -->
+      </div>
+
+      <div class="row">
+        <label class="muted">or enter via drop-down menu</label>
+        <select id="regionSelect"></select>
+        <button id="btnGo" class="btn">enter region</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="assets/app.js"></script>
 </body>
 </html>

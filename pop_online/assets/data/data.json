@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "dataset": "Illinois Antiquity & Places of the Past (sites list)",
+    "year": 2014,
+    "generated_at": "2026-01-27T05:01:16Z",
+    "notes": "Structured from guidebook pages; fields may include seasonal hours and may change."
+  },
+  "regions": [
+    {
+      "region": "American Bottom",
+      "sites": [
+        {
+          "number": 1,
+          "name": "Piasa Bird Memorial",
+          "type": null,
+          "address": "Ill. Rte. 100 (3 miles north of Alton)",
+          "city": "Alton",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [
+            "greatriverroad.com/Cities/Alton/PiasaBird.htm"
+          ],
+          "description": "In 1673, Marquette and Jolliet observed two monsters painted on the limestone bluffs overlooking the Mississippi River; the current image is reconstructed from more recent lore.",
+          "notes": null
+        },
+        {
+          "number": 2,
+          "name": "Lewis and Clark State Historic Site",
+          "type": null,
+          "address": "1 Lewis & Clark Trail",
+          "city": "Hartford",
+          "state": "IL",
+          "zip": "62048",
+          "phone": "618-251-5811",
+          "hours": "May–Labor Day: Mon–Sun 9AM–5PM; Labor Day–Apr: Wed–Sun 9AM–5PM",
+          "websites": [
+            "illinois.gov/ihpa/Experience/Sites/Southwest/Pages/LewisClark.aspx"
+          ],
+          "description": "Lewis and Clark established a winter camp in December 1803 near Hartford prior to starting their journey westward; gallery exhibits include a 55-foot full-scale replica of their keel boat.",
+          "notes": null
+        },
+        {
+          "number": 3,
+          "name": "South Roxana Mounds",
+          "type": null,
+          "address": "South Roxana Park, Smith Street",
+          "city": "South Roxana",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [],
+          "description": "Two mounds that may date to the Middle to Late Woodland period are visible within the park.",
+          "notes": null
+        },
+        {
+          "number": 4,
+          "name": "Madison County Historical Museum",
+          "type": null,
+          "address": "715 N. Main St.",
+          "city": "Edwardsville",
+          "state": "IL",
+          "zip": "62025",
+          "phone": "618-656-7562",
+          "hours": "Wed–Fri 9AM–4PM; Sun 1–4PM",
+          "websites": [
+            "madisoncountyhistoricalmuseum.org"
+          ],
+          "description": "Exhibits in a restored 1836 home include Native American and pioneer artifacts.",
+          "notes": null
+        },
+        {
+          "number": 5,
+          "name": "Horseshoe Lake State Park",
+          "type": null,
+          "address": "3321 Highway 111",
+          "city": "Granite City",
+          "state": "IL",
+          "zip": "62040",
+          "phone": "618-931-0270",
+          "hours": null,
+          "websites": [
+            "dnr.state.il.us/lands/Landmgt/PARKS/R4/HORSESP.HTM"
+          ],
+          "description": "A nearly 3,000-acre park area that includes the Horseshoe Lake platform mound dating to the Mississippian period (AD 1000–1200).",
+          "notes": null
+        },
+        {
+          "number": 6,
+          "name": "Cahokia Courthouse",
+          "type": null,
+          "address": "107 Elm St.",
+          "city": "Cahokia",
+          "state": "IL",
+          "zip": "62206",
+          "phone": "618-332-1782",
+          "hours": "Mar–Oct: Thu–Sat 8AM–5PM; Nov–Feb: Thu–Sat 9AM–4PM",
+          "websites": [
+            "illinois.gov/ihpa/Experience/Sites/Southwest/Pages/Cahokia-Courthouse.aspx"
+          ],
+          "description": "Originally constructed by the French about 1740; later served as a center of political activity in the Illinois Country. WPA excavations in the 1930s are included in the courthouse exhibits.",
+          "notes": null
+        },
+        {
+          "number": 7,
+          "name": "Cahokia Mounds State Historic Site & Interpretive Center",
+          "type": null,
+          "address": "30 Ramey St.",
+          "city": "Collinsville",
+          "state": "IL",
+          "zip": "62234",
+          "phone": "618-346-5160",
+          "hours": "May–Oct: Daily 9AM–5PM; Nov–Dec & Feb–Apr: Wed–Sun 9AM–5PM; Jan: Wed–Sun 9AM–4PM; Grounds: 8AM–dusk",
+          "websites": [
+            "cahokiamounds.org"
+          ],
+          "description": "Preserves about 2,200 acres of the largest pre-contact American Indian community north of Mexico; at its peak (around AD 1050–1150) the community covered nearly 6 square miles, included about 120 mounds, and may have had a population of 10,000–20,000.",
+          "notes": null
+        },
+        {
+          "number": 8,
+          "name": "Emerald Mound",
+          "type": null,
+          "address": "Emerald Mound Road (from Lebanon via IL Rte 4)",
+          "city": "Lebanon (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [],
+          "description": "Owned by the State of Illinois; the largest of the three remaining Mississippian mounds in this group is a large flat-topped pyramid, about 20 feet high.",
+          "notes": "Directions on brochure: From Lebanon take IL Rte 4 north to Emerald Mound Rd (turn east); mound is south. A driving loop uses Emerald Mound Grange Rd south, then Midgley–Neiss Rd west back to IL Rte 4."
+        },
+        {
+          "number": 9,
+          "name": "Fort de Chartres State Historic Site",
+          "type": null,
+          "address": "1350 Ill. Rte. 155",
+          "city": "Prairie du Rocher",
+          "state": "IL",
+          "zip": "62277",
+          "phone": "618-284-7230",
+          "hours": "Wed–Sun 9AM–5PM",
+          "websites": [
+            "ftdechartres.com",
+            "illinois.gov/ihpa/Experience/Sites/Southwest/Pages/Fort-de-Chartres.aspx"
+          ],
+          "description": null,
+          "notes": "Brochure also mentions Feitman Museum (king’s storehouse) and lists an additional contact number 618-826-2667."
+        },
+        {
+          "number": 10,
+          "name": "Modoc Rock Shelter",
+          "type": null,
+          "address": "County Rte. 7 (2 miles SE of Prairie du Rocher)",
+          "city": "Prairie du Rocher (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [],
+          "description": "Listed on the National Register of Historic Places and a National Historic Landmark. The sandstone bluff at Modoc Rock Shelter provided shelter for Native American groups beginning shortly after the Ice Age, continuing for almost 8,000 years.",
+          "notes": null
+        },
+        {
+          "number": 11,
+          "name": "Fort Kaskaskia State Historic Site",
+          "type": null,
+          "address": "4372 Park Road",
+          "city": "Ellis Grove",
+          "state": "IL",
+          "zip": "62241",
+          "phone": "618-859-3741",
+          "hours": "Daily 8AM–4PM",
+          "websites": [
+            "illinois.gov/ihpa/Experience/Sites/Southwest/Pages/Fort-Kaskaskia.aspx"
+          ],
+          "description": "The 200-acre bluff-top park includes the remnants of a French earthen-work and timber fortification constructed in the mid-1700s.",
+          "notes": null
+        },
+        {
+          "number": 12,
+          "name": "Randolph County Museum",
+          "type": null,
+          "address": "1 Taylor St.",
+          "city": "Chester",
+          "state": "IL",
+          "zip": "62233",
+          "phone": null,
+          "hours": "Sun, Mon, Thu, Fri 12:30–3:30PM",
+          "websites": [],
+          "description": null,
+          "notes": null
+        },
+        {
+          "number": 13,
+          "name": "Piney Creek Ravine State Natural Area",
+          "type": null,
+          "address": "c/o 4301 S. Kaeber",
+          "city": "Chester",
+          "state": "IL",
+          "zip": "62233",
+          "phone": "618-826-2706",
+          "hours": null,
+          "websites": [
+            "dnr.state.il.us/Lands/landmgt/parks/R4/pcr.htm"
+          ],
+          "description": "Contains the largest body of prehistoric rock art in Illinois, with almost 200 designs believed to date to the Late Woodland (AD 500–1000) and Mississippian (AD 1000–1550) periods.",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "region": "Southern Illinois",
+      "sites": [
+        {
+          "number": 1,
+          "name": "Carlyle Lake Visitor Center",
+          "type": null,
+          "address": "US 50 (50 miles east of St. Louis, MO)",
+          "city": "Carlyle",
+          "state": "IL",
+          "zip": "62231",
+          "phone": "618-594-5253",
+          "hours": "Apr–end of May & Sep: Sat–Sun 10AM–6PM; end of May–early Sep: Daily 10AM–6PM",
+          "websites": [
+            "mvs.usace.army.mil/Missions/Recreation/Carlyle-Lake/Recreation.aspx"
+          ],
+          "description": "Located at the southern end of the 26,000-acre lake; exhibits on construction of the lake, natural history, and a display about area archaeology.",
+          "notes": null
+        },
+        {
+          "number": 2,
+          "name": "General John A. Logan Museum",
+          "type": null,
+          "address": "1613 Edith St.",
+          "city": "Murphysboro",
+          "state": "IL",
+          "zip": "62966",
+          "phone": "618-684-3455",
+          "hours": "Jun–Aug: Tue–Sat 10AM–4PM; Sun 1–4PM; Sep–May: Tue–Sun 1–4PM",
+          "websites": [
+            "loganmuseum.org"
+          ],
+          "description": "Located in the Christopher C. Bullar house; archaeological collections from a decade of excavations from the original Logan home are on display.",
+          "notes": null
+        },
+        {
+          "number": 3,
+          "name": "Giant City State Park",
+          "type": null,
+          "address": "235 Giant City Rd.",
+          "city": "Makanda",
+          "state": "IL",
+          "zip": "62958",
+          "phone": "618-457-4836",
+          "hours": null,
+          "websites": [
+            "dnr.state.il.us/lands/landmgt/parks/5/gc.htm"
+          ],
+          "description": "Giant City Stone Fort was constructed during the Late Woodland period (about 1,400–1,200 years ago); interpretive signs can be found on hiking trails.",
+          "notes": null
+        },
+        {
+          "number": 4,
+          "name": "The Pounds Site",
+          "type": null,
+          "address": "Rim Rock National Recreation Trail (5 miles east of Garden of the Gods on Karbers Ridge Blacktop)",
+          "city": null,
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [],
+          "description": null,
+          "notes": null
+        },
+        {
+          "number": 5,
+          "name": "Kaolin Pond",
+          "type": null,
+          "address": "5 miles west of Cobden",
+          "city": "Cobden (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [],
+          "description": "Archaeological site managed by the USDA Forest Service; location of a mid-19th-century kaolin clay mine and village.",
+          "notes": null
+        },
+        {
+          "number": 6,
+          "name": "Union County Museum",
+          "type": null,
+          "address": "117 N. Appleknocker Dr.",
+          "city": "Cobden",
+          "state": "IL",
+          "zip": "62920",
+          "phone": "618-893-2865",
+          "hours": "Sat–Sun 1–5PM",
+          "websites": [
+            "unioncountymuseum.com"
+          ],
+          "description": "Exhibits include American Indian artifacts from private collections from sites in Union County and southern Illinois; brochure also notes 19th-century pottery vessels from the Kirkpatrick family and Anna Pottery.",
+          "notes": null
+        },
+        {
+          "number": 7,
+          "name": "Millstone Bluff Archaeological Area",
+          "type": null,
+          "address": "13 miles northeast of Vienna",
+          "city": "Vienna (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [
+            "fs.usda.gov/recarea/shawnee/recreation/hiking/recarea/?recid=10689&actid=51"
+          ],
+          "description": "A unique topographical feature rising 320 feet above surrounding terrain; includes an unpaved prehistoric Mississippian village, stone box cemetery, and a rock art site within the Shawnee National Forest.",
+          "notes": null
+        },
+        {
+          "number": 8,
+          "name": "Illinois Iron Furnace",
+          "type": null,
+          "address": "Elizabethtown area",
+          "city": "Elizabethtown (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [
+            "theshawneenationalforest.com/home/recreation-areas/iron-furnace-recreation-area"
+          ],
+          "description": null,
+          "notes": null
+        },
+        {
+          "number": 9,
+          "name": "Thebes Court House",
+          "type": null,
+          "address": "Oak & 5th Streets",
+          "city": "Thebes",
+          "state": "IL",
+          "zip": "62990",
+          "phone": "618-764-2658",
+          "hours": "Tours by appointment",
+          "websites": [
+            "thebescourthouse.com"
+          ],
+          "description": "The 1845 courthouse is an impressive stone building overlooking the Mississippi River; it has a limited collection of prehistoric artifacts in the basement.",
+          "notes": null
+        },
+        {
+          "number": 10,
+          "name": "Fort Massac State Park",
+          "type": null,
+          "address": "1308 E 5th St.",
+          "city": "Metropolis",
+          "state": "IL",
+          "zip": "62960",
+          "phone": "618-524-4712",
+          "hours": null,
+          "websites": [
+            "dnr.state.il.us/lands/Landmgt/PARKS/R5/fmassac.htm"
+          ],
+          "description": "Visitor center contains both ancient Native American artifacts and artifacts recovered from Fort Massac during 1939–42, 1966, and 1970 excavations.",
+          "notes": null
+        },
+        {
+          "number": 11,
+          "name": "Kincaid Mounds",
+          "type": null,
+          "address": "near Akin",
+          "city": "Akin (vicinity)",
+          "state": "IL",
+          "zip": null,
+          "phone": null,
+          "hours": null,
+          "websites": [
+            "illinois.gov/ihpa/Experience/Sites/Southeast/Pages/Kincaid-Mounds.aspx",
+            "kincaidmounds.com"
+          ],
+          "description": "From an interpretive area and platform, visitors can view mounds preserved at this Middle Mississippian period fortified village and mound site (roughly AD 900–1500).",
+          "notes": null
+        },
+        {
+          "number": 12,
+          "name": "Customs House Museum",
+          "type": null,
+          "address": "1400 Washington Ave.",
+          "city": "Cairo",
+          "state": "IL",
+          "zip": "62914",
+          "phone": "618-734-9632",
+          "hours": "Tue–Fri 10AM–noon, 1–3PM",
+          "websites": [
+            "greatriverroad.com/met/ohio/customshouse.htm"
+          ],
+          "description": "The Federal Customs House is listed on the National Register of Historic Places; it is a three-story limestone building with collections that include prehistoric Native American artifacts.",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "region": "Wabash River",
+      "sites": [
+        {
+          "number": 1,
+          "name": "Ballard Nature Center",
+          "type": null,
+          "address": "5253 E. U.S. Highway 40",
+          "city": "Altamont",
+          "state": "IL",
+          "zip": "62411",
+          "phone": "618-483-6856",
+          "hours": "Tue–Fri 8AM–4PM; Sat noon–4PM; summer also open Mon & Sun",
+          "websites": [
+            "ballardnaturecenter.org"
+          ],
+          "description": "Six miles of trails provide access to 210 acres of woodland, tallgrass prairie, and wetlands; Nature Center displays include a collection of projectile points donated by long-time collector John William Warner.",
+          "notes": null
+        },
+        {
+          "number": 2,
+          "name": "Teutopolis Monastery Museum",
+          "type": null,
+          "address": "110 S. Garrett St.",
+          "city": "Teutopolis",
+          "state": "IL",
+          "zip": "62467",
+          "phone": "217-857-3586",
+          "hours": "Apr–Nov: 1st Sunday of month 12:30–4PM",
+          "websites": [
+            "stfrancischurch.com/newsite/wordpress/?page_id=173"
+          ],
+          "description": "Within the museum are books and artifacts related to Franciscan Friars during their novitiate year; one room includes displays related to local history, including some Native American material.",
+          "notes": null
+        },
+        {
+          "number": 3,
+          "name": "Hutson Memorial Village Museum",
+          "type": null,
+          "address": "Outer South Rose Street (1.5 miles south of Hutsonville)",
+          "city": "Hutsonville",
+          "state": "IL",
+          "zip": "62433",
+          "phone": "618-546-1557",
+          "hours": "Jun–Sep: Sun 2–4PM",
+          "websites": [
+            "rootsweb.ancestry.com/~ilchs/Articles/hutsonville.html"
+          ],
+          "description": "Museum includes five restored/recreated pioneer cabins, a general store and barbershop, a barn, working outhouse, family cabin, log barn, and log church (recreation details continue in brochure).",
+          "notes": null
+        },
+        {
+          "number": 4,
+          "name": "Newton Public Library District",
+          "type": null,
+          "address": "100 S. Van Buren St.",
+          "city": "Newton",
+          "state": "IL",
+          "zip": "62448",
+          "phone": "618-783-8141",
+          "hours": "Open during library hours",
+          "websites": [
+            "newton.lib.il.us/"
+          ],
+          "description": "Displays include some Native American artifacts.",
+          "notes": null
+        },
+        {
+          "number": 5,
+          "name": "Crawford County Historical Museum",
+          "type": null,
+          "address": "408 S. Cross St.",
+          "city": "Robinson",
+          "state": "IL",
+          "zip": "62454",
+          "phone": "618-544-3087",
+          "hours": "Sat–Sun 2–4PM & by appointment",
+          "websites": [
+            "rootsweb.ancestry.com/~ilchs/"
+          ],
+          "description": "Located in the former Schmidt Clinic building; extensive displays of regional Wabash River valley pre-contact Native American sites and pioneer-era sites collected over several decades of archaeological investigations.",
+          "notes": null
+        },
+        {
+          "number": 6,
+          "name": "Fife Opera House",
+          "type": null,
+          "address": "123 S Main St.",
+          "city": "Palestine",
+          "state": "IL",
+          "zip": "62451",
+          "phone": "618-586-9418",
+          "hours": "Open for special events & by appointment",
+          "websites": [
+            "fifeoperahouse.org/"
+          ],
+          "description": "Display of Palestine-area artifacts (line in brochure is truncated after 'Roy Mor-').",
+          "notes": null
+        },
+        {
+          "number": 7,
+          "name": "Olney Carnegie Library / Carnegie Building Museum",
+          "type": null,
+          "address": "401 E Main St.",
+          "city": "Olney",
+          "state": "IL",
+          "zip": "62449",
+          "phone": "618-395-1963",
+          "hours": "Apr–Nov: Sun 1–4PM",
+          "websites": [
+            "richlandcountymuseums.org"
+          ],
+          "description": "Library houses many local artifacts, including Native American artifacts.",
+          "notes": null
+        },
+        {
+          "number": 8,
+          "name": "White County Historical Society (I. L. Haas State Museum)",
+          "type": null,
+          "address": "219 E Main St.",
+          "city": "Carmi",
+          "state": "IL",
+          "zip": "62801",
+          "phone": "618-382-8425",
+          "hours": "Open by appointment",
+          "websites": [
+            "rootsweb.com/~ilwochs/museums.htm"
+          ],
+          "description": "Along with tools, photographs, and vintage clothing, the museum has hanging tools of Phil Hanna ('the hangman'); exhibits also include Native American artifacts.",
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Region</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a class="link" href="index.html">Return to map</a>
+      <h1 id="regionTitle">Region</h1>
+      <p class="muted" id="regionMeta"></p>
+    </div>
+
+    <div class="topbar-actions">
+      <button id="btnAdd" class="btn">+ Add Site</button>
+      <button id="btnExport" class="btn">Export JSON</button>
+      <label class="btn">
+        Import JSON
+        <input id="importFile" type="file" accept="application/json" hidden />
+      </label>
+    </div>
+  </header>
+
+  <main class="container grid-2">
+    <section class="card">
+      <div class="row">
+        <input id="search" class="input" placeholder="Search:name / city / type / number..." />
+        <select id="sort" class="input">
+          <option value="number-asc">in numerical ascending order</option>
+          <option value="number-desc">in numerical descending order</option>
+          <option value="name-asc">in alphabetical order</option>
+        </select>
+      </div>
+
+      <ul id="siteList" class="list"></ul>
+      <p class="muted small">Click Edit to edit.</p>
+    </section>
+
+    <section class="card">
+      <div id="emptyState" class="muted">Please select a site or add a site</div>
+
+      <div id="detail" class="hidden">
+        <div class="row space-between">
+          <h2 id="detailTitle"></h2>
+          <div class="row">
+            <button id="btnEdit" class="btn">Edit</button>
+            <button id="btnDelete" class="btn danger">Delete</button>
+          </div>
+        </div>
+
+        <div class="kv" id="detailKv"></div>
+      </div>
+
+      <form id="editor" class="hidden">
+        <h2 id="editorTitle">Edit</h2>
+
+        <div class="form-grid">
+          <label>number
+            <input id="f_number" class="input" type="number" min="1" required />
+          </label>
+
+          <label>name
+            <input id="f_name" class="input" />
+          </label>
+
+          <label>address
+            <input id="f_address" class="input" />
+          </label>
+
+          <label>city
+            <input id="f_city" class="input" />
+          </label>
+
+          <label>state
+            <input id="f_state" class="input" />
+          </label>
+
+          <label>zip
+            <input id="f_zip" class="input" />
+          </label>
+
+          <label>phone
+            <input id="f_phone" class="input" />
+          </label>
+
+          <label>hours
+            <input id="f_hours" class="input" />
+          </label>
+
+          <label>type
+            <input id="f_type" class="input" placeholder="e.g., museum / historic site..." />
+          </label>
+
+          <label class="full">description
+            <textarea id="f_description" class="input" rows="3"></textarea>
+          </label>
+
+          <label class="full">notes
+            <textarea id="f_notes" class="input" rows="3"></textarea>
+          </label>
+
+          <div class="full">
+            <div class="row space-between">
+              <label class="muted">Websites（Multiple Allowed）</label>
+              <button id="btnAddUrl" class="btn" type="button">+ Addwebsite</button>
+            </div>
+            <div id="urlList" class="url-list"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <button id="btnSave" class="btn" type="submit">Save</button>
+          <button id="btnCancel" class="btn" type="button">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

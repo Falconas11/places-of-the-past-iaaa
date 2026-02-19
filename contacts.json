@@ -1,0 +1,81 @@
+[
+  {
+    "id": "addison_kimmel",
+    "name": "Dr. Addison Kimmel",
+    "role": "IAAA President",
+    "organization": "Illinois Association for Advancement in Archaeology",
+    "location": "Rock Island, IL",
+    "regionFocus": ["Quad Cities", "General Contact"],
+    "emails": [
+      "akimmel@wapsivalleyarch.com",
+      "addison.kimmel.rrc@gmail.com"
+    ],
+    "phone": null,
+    "notes": "General point of contact if Holly is unavailable."
+  },
+  {
+    "id": "sara_pfannkuche",
+    "name": "Dr. Sara Pfannkuche",
+    "role": "IAAA Vice President",
+    "organization": "Illinois Association for Advancement in Archaeology",
+    "location": "Champaign, IL",
+    "regionFocus": ["Northwest Illinois", "North Central Illinois"],
+    "emails": [
+      "sara.pfannkuche@gmail.com"
+    ],
+    "phone": null,
+    "notes": "Some sites in her region still need to be added."
+  },
+  {
+    "id": "william_kelley",
+    "name": "Dr. William Kelley",
+    "role": "President",
+    "organization": "South Suburban Archaeological Society",
+    "location": "Homewood, IL",
+    "regionFocus": ["South Suburban Area"],
+    "emails": [
+      "will.k.31137@gmail.com"
+    ],
+    "phone": "773-268-6705",
+    "notes": "Discuss research methods used by his group. May provide materials or direct to Anne Wilson-Dooley."
+  },
+  {
+    "id": "bill_iseminger",
+    "name": "Bill Iseminger",
+    "role": "Cahokia Region Contact / Journal Editor",
+    "organization": "Illinois Association for Advancement in Archaeology",
+    "location": "Cahokia Region, IL",
+    "regionFocus": ["Cahokia Region"],
+    "emails": [
+      "mrmounds@charter.net"
+    ],
+    "phone": null,
+    "notes": "Very knowledgeable about the Cahokia region. Editor, writer, and artist."
+  },
+  {
+    "id": "anne_wilson_dooley",
+    "name": "Anne Wilson-Dooley",
+    "role": "Board Director",
+    "organization": "Chicago Archaeological Society / IAAA",
+    "location": "Chicago, IL",
+    "regionFocus": ["Chicago Area", "POP Committee"],
+    "emails": [
+      "awdanthro@aol.com"
+    ],
+    "phone": null,
+    "notes": "Former chair of the POP redo committee. Coordinates State Fair exhibit."
+  },
+  {
+    "id": "alice_berkson",
+    "name": "Alice Berkson",
+    "role": "POP Publication Originator / Former Editor / Board Director",
+    "organization": "Illinois Association for Advancement in Archaeology",
+    "location": "Champaign, IL",
+    "regionFocus": ["General Contact"],
+    "emails": [
+      "berksonalice@gmail.com"
+    ],
+    "phone": "217-714-4884",
+    "notes": "Earliest IAAA member. Contact if Holly is unavailable."
+  }
+]

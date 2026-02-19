@@ -23,7 +23,13 @@ function escapeHtml(s) {
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
   }[c]));
 }
-
+function normalizeUrl(u) {
+  const s = String(u ?? "").trim();
+  if (!s) return "";
+  if (/^https?:\/\//i.test(s)) return s;       
+  if (s.startsWith("//")) return "https:" + s; // //example.com
+  return "https://" + s;                       // example.com/...
+}
 // ------------------- index.html -------------------
 async function initIndexPage() {
   const wrap = $("mapWrap");
@@ -125,8 +131,13 @@ function showDetail(site) {
     <div class="kv-row">
       <div class="kv-k">websites</div>
       <div class="kv-v">
-        ${websites.length ? websites.map(u => `<div><a href="${escapeHtml(u)}" target="_blank" rel="noreferrer">${escapeHtml(u)}</a></div>`).join("") : "<span class='muted'>(无)</span>"}
-      </div>
+       ${websites.length
+  ? websites.map(u => {
+      const href = normalizeUrl(u);
+      return `<div><a href="${escapeHtml(href)}" target="_blank" rel="noreferrer">${escapeHtml(u)}</a></div>`;
+    }).join("")
+  : "<span class='muted'>(Null)</span>"
+}
     </div>
   `;
 
@@ -139,10 +150,13 @@ function showDetail(site) {
     $("detail").classList.add("hidden");
     $("emptyState").classList.remove("hidden");
   };
+  document.querySelector("main.container.grid-2 > section.card:nth-child(2)")?.scrollTo({ top: 0, behavior: "smooth" });
+
 }
 
 function kvRow(k, v) {
-  const value = (v && String(v).trim().length) ? escapeHtml(v) : "<span class='muted'>(无)</span>";
+  const s = (v == null) ? "" : String(v).trim();
+  const value = (v && String(v).trim().length) ? escapeHtml(v) : "<span class='muted'>(null)</span>";
   return `
     <div class="kv-row">
       <div class="kv-k">${escapeHtml(k)}</div>
@@ -237,6 +251,9 @@ function openEditor(kind, site) {
     originalNumber = Number(site.number);
     setEditorFields(site);
   }
+    const rightCard = document.querySelector("main.container.grid-2 > section.card:nth-child(2)");
+  rightCard?.scrollTo({ top: 0, behavior: "smooth" });
+  $("editor")?.scrollIntoView({ block: "start", behavior: "smooth" });
 }
 
 function suggestNextNumber() {

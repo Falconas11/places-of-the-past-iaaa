@@ -166,3 +166,40 @@ a{ color:inherit; }
   background: rgba(0,0,0,.18);
   overflow:auto;
 }
+
+
+html, body { height: 100%; }
+body { overflow: auto; }
+
+body.page-region{
+  height: 100vh;
+  overflow: hidden;    
+  display: flex;
+  flex-direction: column;
+}
+
+body.page-region .topbar{
+  position: relative;
+  flex: 0 0 auto;
+}
+
+body.page-region .container{
+  flex: 1 1 auto;
+  min-height: 0;          
+  max-width:1100px;
+  margin: 20px auto;
+  padding: 0 16px 32px;
+}
+
+body.page-region .grid-2{
+  height: 100%;
+  min-height: 0;
+}
+
+body.page-region .grid-2 > .card{
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+

@@ -117,5 +117,5 @@
   <!-- 外圈描边再盖一层，让分区边缘更干净 -->
   <use href="#ilShape" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="3"/>
 
-  <text class="hint" x="16" y="504">点击彩色区域进入对应 region（名称需与 data.json 完全一致）</text>
+  <text class="hint" x="16" y="504">Click to enter region</text>
 </svg>

@@ -35,7 +35,7 @@ async function initIndexPage() {
   const wrap = $("mapWrap");
   if (wrap) {
     // SVG map
-    const res = await fetch("assets/map.svg", { cache: "no-store" });
+    const res = await fetch("assets/map_strict_interactive.svg", { cache: "no-store" });
     wrap.innerHTML = await res.text();
 
     // Bind region click

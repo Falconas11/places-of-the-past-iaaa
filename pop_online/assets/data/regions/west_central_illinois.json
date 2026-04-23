@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "dataset": "Illinois Antiquity & Places of the Past (sites list)",
+    "year": 2014,
+    "generated_at": "2026-01-27T05:01:16Z",
+    "notes": "Structured from guidebook pages; fields may include seasonal hours and may change."
+  },
+  "region": "West Central Illinois",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Essley-Noble Museum",
+      "address": "1406 SE 2nd Ave",
+      "city": "Aledo",
+      "state": "IL",
+      "zip": "61231",
+      "phone": "309-582-2280",
+      "hours": "Apr-Oct: Thu-Sat 1-5PM; Nov-Mar: Fri-Sat 12-4PM",
+      "websites": [
+        "https://www.mercercountyhistoricalsocietyil.org/"
+      ],
+      "description": "Museum exhibits include county history collections and locally recovered Native American artifacts from Mercer County.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 2,
+      "name": "Marshall County Historical Society & Museum",
+      "address": "314 5th St.",
+      "city": "Lacon",
+      "state": "IL",
+      "zip": "61540",
+      "phone": "309.246.2349",
+      "hours": "Tue-Wed 9AM-12PM; Sat 10AM-12PM",
+      "websites": [
+        "http://www.marshallcountyhistory.org/"
+      ],
+      "description": "Museum collections include artifacts and materials related to Marshall County history, including Native American artifacts from the region.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 3,
+      "name": "New Boston Historical Society Museum",
+      "address": "201 Main St",
+      "city": "New Boston",
+      "state": "IL",
+      "zip": "61272",
+      "phone": "309-587-8181",
+      "hours": "Seasonal; typically Saturdays Apr-Oct",
+      "websites": [
+        "https://www.facebook.com/NewBostonIlMuseum/"
+      ],
+      "description": "Local museum preserving regional history with displays that include artifacts from the New Boston area.",
+      "notes": "Hours variable; verify",
+      "type": "museum"
+    },
+    {
+      "number": 4,
+      "name": "Henderson County Museum",
+      "address": "310 E Main St",
+      "city": "Raritan",
+      "state": "IL",
+      "zip": "61471",
+      "phone": "309-746-6103",
+      "hours": "Seasonal",
+      "websites": [
+        "https://www.greatriverroad-illinois.org/Henderson-County-Historical-Society-Museum"
+      ],
+      "description": "Museum complex preserving rural Henderson County history, including artifacts from early settlement and local archaeological finds.",
+      "notes": "Limited/seasonal hours; confirm before visiting",
+      "type": "museum"
+    },
+    {
+      "number": 5,
+      "name": "Warren County History Museum",
+      "address": "238 S. Sunny Lane",
+      "city": "Monmouth",
+      "state": "IL",
+      "zip": "61462",
+      "phone": "309.734.8433",
+      "hours": "Apr-Dec: Tue-Sat 1PM-4PM; winter by appointment",
+      "websites": [
+        "https://www.wchistorymuseum.com/"
+      ],
+      "description": "County museum with exhibits on local history, including Native American artifacts and related materials from Warren County.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 6,
+      "name": "Knox County Museum",
+      "address": "33 Public Square",
+      "city": "Knoxville",
+      "state": "IL",
+      "zip": "61448",
+      "phone": "309-289-6919",
+      "hours": "By appointment",
+      "websites": [
+        "https://www.kville.org/kchistory/Museum.html"
+      ],
+      "description": "Museum located in a historic courthouse complex with exhibits of local artifacts from Knox County, including Native American materials.",
+      "notes": "Private tours only",
+      "type": "museum"
+    },
+    {
+      "number": 7,
+      "name": "Chillicothe Historical Society Museum",
+      "address": "723 N. 4th St.",
+      "city": "Chillicothe",
+      "state": "IL",
+      "zip": "61523",
+      "phone": "309.274.9076",
+      "hours": "Mar-Nov: Sun 1PM-4PM",
+      "websites": [
+        "https://chillicothehistorical.org/"
+      ],
+      "description": "Museum exhibits interpret Chillicothe area history and include displays of Native American artifacts from the region.",
+      "notes": "The society operates multiple museum locations.",
+      "type": "museum"
+    },
+    {
+      "number": 8,
+      "name": "Peoria Riverfront Museum",
+      "address": "222 SW Washington St.",
+      "city": "Peoria",
+      "state": "IL",
+      "zip": "61602",
+      "phone": "309.686.7000",
+      "hours": "Daily 10AM-5PM",
+      "websites": [
+        "https://www.peoriariverfrontmuseum.org/"
+      ],
+      "description": "Museum collections include archaeological specimens and exhibits on Native American and regional history in the Illinois River valley.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 9,
+      "name": "Wildlife Prairie Park",
+      "address": "3826 N. Taylor Rd.",
+      "city": "Hanna City",
+      "state": "IL",
+      "zip": "61536",
+      "phone": "309.676.0998",
+      "hours": "Open daily; ticket gate 9AM-4:30PM; animal trails 9AM-4PM",
+      "websites": [
+        "https://wildlifeprairiepark.org/"
+      ],
+      "description": "Large educational park with exhibits interpreting prairie life and regional natural history, including information on Native American presence in the area.",
+      "notes": "",
+      "type": "park"
+    },
+    {
+      "number": 10,
+      "name": "Weld House Museum",
+      "address": "1380 Mulholland St.",
+      "city": "Nauvoo",
+      "state": "IL",
+      "zip": "62354",
+      "phone": "309.221.9803",
+      "hours": "May 15-Oct 15: 1PM-4PM; or by appointment",
+      "websites": [
+        "https://nauvoohistoricalsociety.com/museums"
+      ],
+      "description": "Historic house museum with exhibits covering Nauvoo history, including Native American artifacts and early settlement materials.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 11,
+      "name": "Rheinberger Museum",
+      "address": "980 S Bluff St",
+      "city": "Nauvoo",
+      "state": "IL",
+      "zip": "62354",
+      "phone": "217-453-2512",
+      "hours": "May-Oct: 1-5PM",
+      "websites": [
+        "https://dnr.illinois.gov/parks/visitorcenter/park.nauvoo.html"
+      ],
+      "description": "Housed in a restored home originally built by Mormons in the 1840s, the museum exhibits artifacts from all periods of Nauvoo’s history, from Native American occupation to the 1930s.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 12,
+      "name": "LaHarpe Historical Society Museum",
+      "address": "111 E Main St",
+      "city": "La Harpe",
+      "state": "IL",
+      "zip": "61450",
+      "phone": "217-659-3635",
+      "hours": "Mon & Sat 9-11AM, 1-4PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Local museum preserving community history with displays of artifacts from the La Harpe area.",
+      "notes": "No reliable official website found",
+      "type": "museum"
+    },
+    {
+      "number": 13,
+      "name": "Kibbe Hancock Heritage Museum",
+      "address": "308 Walnut St",
+      "city": "Carthage",
+      "state": "IL",
+      "zip": "62321",
+      "phone": "217-357-9552",
+      "hours": "Seasonal: Mon-Sat 12-4PM; Sun 1-4PM",
+      "websites": [
+        "https://carthage-il.com/business/kibbe-hancock-heritage-museum/"
+      ],
+      "description": "Regional museum with collections that include archaeological materials and artifacts from Hancock County.",
+      "notes": "Closed Jan-Feb",
+      "type": "museum"
+    },
+    {
+      "number": 14,
+      "name": "Dickson Mounds Museum",
+      "address": "10956 N. Dickson Mounds Rd.",
+      "city": "Lewistown",
+      "state": "IL",
+      "zip": "61542",
+      "phone": "309.547.3721",
+      "hours": "Tue-Sat 9AM-4:30PM",
+      "websites": [
+        "https://www.illinoisstatemuseum.org/welcome-dickson-mounds/dickson-mounds-plan-your-visit.html"
+      ],
+      "description": "On-site archaeological museum interpreting more than 12,000 years of Native American history in the Illinois River Valley through excavated materials and exhibits.",
+      "notes": "Closed New Year's Day, Thanksgiving Day, and Christmas Day.",
+      "type": "museum"
+    }
+  ]
+}

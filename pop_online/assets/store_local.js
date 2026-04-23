@@ -1,7 +1,8 @@
-// assets/store_local.js  
-const DEFAULT_DATA_URL = "assets/data/places_data_export.json";
+// assets/store_local.js
+const MANIFEST_URL = "assets/data/regions/regions_manifest.json";
 
-let _data = null;
+let _manifest = null;
+const _regionCache = new Map();
 
 function normalizeSite(site) {
   const s = { ...site };
@@ -14,26 +15,38 @@ function normalizeSite(site) {
   return s;
 }
 
-function normalizeData(data) {
-  const d = { ...data };
-  if (!Array.isArray(d.regions)) d.regions = [];
-  d.regions = d.regions.map(r => ({
-    ...r,
-    region: String(r.region ?? ""),
-    sites: Array.isArray(r.sites) ? r.sites.map(normalizeSite) : []
-  }));
-  return d;
+function normalizeRegionData(data) {
+  return {
+    metadata: data.metadata ?? {},
+    region: String(data.region ?? ""),
+    sites: Array.isArray(data.sites) ? data.sites.map(normalizeSite) : []
+  };
 }
 
-async function fetchDefault() {
-  const res = await fetch(DEFAULT_DATA_URL, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Cannot load default data: ${DEFAULT_DATA_URL}`);
-  const json = await res.json();
-  return normalizeData(json);
+async function fetchJson(url) {
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Cannot load: ${url}`);
+  return res.json();
 }
 
-function getRegionObj(data, regionName) {
-  return data.regions.find(r => r.region === regionName) || null;
+async function loadManifest() {
+  if (_manifest) return _manifest;
+  _manifest = await fetchJson(MANIFEST_URL);
+  if (!Array.isArray(_manifest.regions)) _manifest.regions = [];
+  return _manifest;
+}
+
+async function loadRegion(regionName) {
+  if (_regionCache.has(regionName)) return _regionCache.get(regionName);
+
+  const manifest = await loadManifest();
+  const entry = manifest.regions.find(r => r.region === regionName);
+  if (!entry) return null;
+  if (!entry.file) return _regionCache.get(regionName) ?? null;
+
+  const data = normalizeRegionData(await fetchJson(entry.file));
+  _regionCache.set(regionName, data);
+  return data;
 }
 
 function nextNumber(regionObj) {
@@ -41,51 +54,58 @@ function nextNumber(regionObj) {
   return max + 1;
 }
 
-function ensureLoaded() {
-  if (!_data) throw new Error("Data not loaded yet. Call loadAll() first.");
-  return _data;
-}
-
 export const store = {
   async loadAll() {
-    if (_data) return _data;
-    _data = await fetchDefault();
-    return _data;
+    const manifest = await loadManifest();
+    const regions = [];
+    for (const item of manifest.regions) {
+      const region = await loadRegion(item.region);
+      if (region) regions.push({ region: region.region, sites: region.sites.map(s => ({ ...s })) });
+    }
+    return { metadata: manifest.metadata ?? {}, regions };
   },
 
-  // reset = 丢弃内存改动，重新从 JSON 文件拉
   async reset() {
-    _data = await fetchDefault();
-    return _data;
+    _manifest = null;
+    _regionCache.clear();
+    return this.loadAll();
   },
 
-  // 导出当前内存中的数据（如果你改了数据，就能导出）
   async exportJson() {
     const data = await this.loadAll();
     return JSON.stringify(data, null, 2);
   },
 
-  // 导入：替换内存数据（不会写回文件）
   async importJson(jsonText) {
-    _data = normalizeData(JSON.parse(jsonText));
-    return _data;
+    const parsed = JSON.parse(jsonText);
+    _manifest = {
+      metadata: parsed.metadata ?? {},
+      regions: (parsed.regions ?? []).map(r => ({ region: String(r.region ?? ""), file: null }))
+    };
+    _regionCache.clear();
+    for (const r of parsed.regions ?? []) {
+      _regionCache.set(String(r.region ?? ""), {
+        metadata: parsed.metadata ?? {},
+        region: String(r.region ?? ""),
+        sites: Array.isArray(r.sites) ? r.sites.map(normalizeSite) : []
+      });
+    }
+    return this.loadAll();
   },
 
   async getRegions() {
-    const data = await this.loadAll();
-    return data.regions.map(r => r.region);
+    const manifest = await loadManifest();
+    return manifest.regions.map(r => r.region);
   },
 
   async getRegion(regionName) {
-    const data = await this.loadAll();
-    const r = getRegionObj(data, regionName);
+    const r = await loadRegion(regionName);
     if (!r) return null;
     return { region: r.region, sites: r.sites.map(s => ({ ...s })) };
   },
 
   async addSite(regionName, site) {
-    const data = ensureLoaded();
-    const r = getRegionObj(data, regionName);
+    const r = await loadRegion(regionName);
     if (!r) throw new Error(`Cannot find region: ${regionName}`);
 
     const s = normalizeSite(site);
@@ -99,8 +119,7 @@ export const store = {
   },
 
   async updateSite(regionName, number, patch) {
-    const data = ensureLoaded();
-    const r = getRegionObj(data, regionName);
+    const r = await loadRegion(regionName);
     if (!r) throw new Error(`Cannot find region: ${regionName}`);
 
     const idx = r.sites.findIndex(s => Number(s.number) === Number(number));
@@ -119,8 +138,7 @@ export const store = {
   },
 
   async deleteSite(regionName, number) {
-    const data = ensureLoaded();
-    const r = getRegionObj(data, regionName);
+    const r = await loadRegion(regionName);
     if (!r) throw new Error(`Cannot find region: ${regionName}`);
 
     const before = r.sites.length;

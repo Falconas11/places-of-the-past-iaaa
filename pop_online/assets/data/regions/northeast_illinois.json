@@ -1,0 +1,486 @@
+{
+  "region": "Northeast Illinois",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Elizabeth Lake Nature Preserve Varga Archaeological Site",
+      "address": "11000 Lakeview Rd",
+      "city": "Richmond",
+      "state": "IL",
+      "zip": "60071",
+      "phone": "815-338-6223",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.mccdistrict.org"
+      ],
+      "description": "The preserve includes a complex of archaeological sites associated with Native American occupation in northeastern Illinois.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 2,
+      "name": "Powers-Walker House at Glacial Park",
+      "address": "Rte. 31 & Harts Rd.",
+      "city": "Ringwood",
+      "state": "IL",
+      "zip": "60072",
+      "phone": "815-338-6223",
+      "hours": "Open for special events",
+      "websites": [
+        "https://www.mccdistrict.org"
+      ],
+      "description": "Archaeological investigations at the 1854 Greek Revival farmhouse are presented through exhibits and public programs at the site.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 3,
+      "name": "Elgin Area Historical Society & Museum",
+      "address": "360 Park St.",
+      "city": "Elgin",
+      "state": "IL",
+      "zip": "60120",
+      "phone": "847-742-4248",
+      "hours": "Wed-Sat 12-4PM",
+      "websites": [
+        "https://elginhistory.org"
+      ],
+      "description": "Museum exhibits include the E. Maude and Carl Parlasca Native American Collection, housed in Old Main, an 1856 building that was once part of the Elgin Academy.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 4,
+      "name": "St. Charles History Museum",
+      "address": "215 E. Main St.",
+      "city": "St. Charles",
+      "state": "IL",
+      "zip": "60174",
+      "phone": "630-584-6967",
+      "hours": "Tue-Sat 10AM-4PM; Jun-Aug Sun 12-4PM",
+      "websites": [
+        "https://stcmuseum.org"
+      ],
+      "description": "The museum has over 25 exhibits on local history, including American Indian stone artifacts and handicrafts.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 5,
+      "name": "Garfield Farm Inn & Museum",
+      "address": "3N016 Garfield Rd.",
+      "city": "LaFox",
+      "state": "IL",
+      "zip": "60147",
+      "phone": "630-584-8485",
+      "hours": "Jun-Sep Wed & Sun 1-4PM",
+      "websites": [
+        "https://garfieldfarm.org"
+      ],
+      "description": "The museum includes original 1840s buildings, period events, and educational programs; selected artifacts from on-site excavations are displayed.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 6,
+      "name": "Schingoethe Center for Native American Cultures",
+      "address": "Aurora University",
+      "city": "Aurora",
+      "state": "IL",
+      "zip": "60506",
+      "phone": "630-844-7843",
+      "hours": "Hours vary; confirm before visiting",
+      "websites": [
+        "https://aurora.edu/museum"
+      ],
+      "description": "Exhibits include collections of Native American cultural materials displayed at Aurora University.",
+      "notes": "Recently relocated/reopened; confirm current public schedule.",
+      "type": "museum"
+    },
+    {
+      "number": 7,
+      "name": "Addison Historical Museum",
+      "address": "131 W. Lake St.",
+      "city": "Addison",
+      "state": "IL",
+      "zip": "60101",
+      "phone": "630-628-1433",
+      "hours": "Sat 10AM-2PM; Jun-Aug Sat 12-3PM",
+      "websites": [
+        "https://addisonadvantage.org/visitors/history_2/index.php"
+      ],
+      "description": "Located in the 1892 Balzer House, this local historical museum includes an exhibit with area American Indian artifacts.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 8,
+      "name": "Winfield Mounds Forest Preserve",
+      "address": "Winfield Rd between Geneva Rd and High Lake Rd",
+      "city": "Winfield",
+      "state": "IL",
+      "zip": "60190",
+      "phone": "630-933-7200",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.dupageforest.org"
+      ],
+      "description": "The three conical mounds within the forest preserve are thought to date to the Late Woodland period, between AD 600 and 1000.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 9,
+      "name": "Warrenville Historical Museum",
+      "address": "3S530 Second St",
+      "city": "Warrenville",
+      "state": "IL",
+      "zip": "60555",
+      "phone": "630-393-4215",
+      "hours": "Feb-Nov Sun 1-4PM; Jun-Aug Wed 1-4PM",
+      "websites": [
+        "https://www.warrenvillehistorical.org"
+      ],
+      "description": "Permanent exhibits include a display of Native American artifacts collected by an area family.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 10,
+      "name": "Mitchell Museum of the American Indian (Gichigamiin Indigenous Nations Museum)",
+      "address": "3001 Central St.",
+      "city": "Evanston",
+      "state": "IL",
+      "zip": "60201",
+      "phone": "847-475-0911",
+      "hours": "Mon-Fri 10AM-5PM; Sat 10AM-3PM; Sun closed; closed on major holidays",
+      "websites": [
+        "https://gichigamiin-museum.org/"
+      ],
+      "description": "Exhibits focus on North American Indian art, culture, and history, including some prehistoric archaeological materials.",
+      "notes": "Renamed Gichigamiin Indigenous Nations Museum.",
+      "type": "museum"
+    },
+    {
+      "number": 11,
+      "name": "Potawatomi Village Marker",
+      "address": "Forest Home Cemetery, 863 S. Des Plaines Ave.",
+      "city": "Forest Park",
+      "state": "IL",
+      "zip": "60130",
+      "phone": "708-366-1900",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://foresthomecemetery.net"
+      ],
+      "description": "The Forest Home Cemetery, once the location of a Potawatomi village and burial ground, has a historical monument noting its location.",
+      "notes": "Marker location within Forest Home Cemetery.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 12,
+      "name": "Chicago Portage National Historic Site",
+      "address": "Portage Woods, 4600 S. Harlem Ave.",
+      "city": "Lyons",
+      "state": "IL",
+      "zip": "60402",
+      "phone": "800-870-3666",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://fpdcc.com",
+        "https://chicagoportage.org"
+      ],
+      "description": "In 1673 Marquette and Jolliet became the first Europeans known to traverse the portage between the Great Lakes and the Mississippi River system.",
+      "notes": "Outdoor site in forest preserve land.",
+      "type": "historic site"
+    },
+    {
+      "number": 13,
+      "name": "Field Museum",
+      "address": "1400 S. Lake Shore Dr.",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60605",
+      "phone": "312-922-9410",
+      "hours": "Daily 9AM-5PM",
+      "websites": [
+        "https://fieldmuseum.org"
+      ],
+      "description": "Exhibits include materials from Illinois archaeological sites within broader natural history and ethnographic displays.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 14,
+      "name": "Plainfield Historical Society Museum",
+      "address": "15412 S Rte 59",
+      "city": "Plainfield",
+      "state": "IL",
+      "zip": "60544",
+      "phone": "815-436-4073",
+      "hours": "Tue-Thu 9AM-12PM; Sat 1-4PM; other times by appointment",
+      "websites": [
+        "https://plainfieldhistoricalsociety.org/"
+      ],
+      "description": "Located in an old grain elevator office on Illinois Route 126, the museum has a display of local Native American artifacts.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 15,
+      "name": "Isle a la Cache Museum",
+      "address": "501 E. 135th St. (Romeo Rd.)",
+      "city": "Romeoville",
+      "state": "IL",
+      "zip": "60411",
+      "phone": "815-722-9301",
+      "hours": "Wed-Sun 10AM-4PM",
+      "websites": [
+        "https://reconnectwithnature.org/preserves-trails/visitor-centers/isle-a-la-cache-museum/"
+      ],
+      "description": "Located on a 107-acre island in the Des Plaines River, museum exhibits recreate the fur trade era of the 18th century, when French traders encountered the native Potawatomi. The site features a replica Native American longhouse.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 16,
+      "name": "Joliet Iron Works Historic Site",
+      "address": "Columbia Street, just east of Rte. 53 (Scott St.) and east of the Ruby St. Bridge",
+      "city": "Joliet",
+      "state": "IL",
+      "zip": "60431",
+      "phone": "815-727-8700",
+      "hours": "8AM-Sunset",
+      "websites": [
+        "https://reconnectwithnature.org/preserves-trails/joliet-iron-works-historic-site/"
+      ],
+      "description": "Archaeological investigations at this important industrial site showed that the foundations of 19th-century blast furnaces and related facilities are still present and can be viewed along a 0.59-mile interpretive walking trail.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 17,
+      "name": "Oakwood Mound",
+      "address": "1121 E. Cass St.",
+      "city": "Joliet",
+      "state": "IL",
+      "zip": "60432",
+      "phone": "815-726-4781",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "Not available"
+      ],
+      "description": "This low, broad burial mound is located in Oakwood Cemetery, Joliet, opposite the intersection of Walnut Street and U.S. 30; the 1,000-year-old Woodland period Indian burial mound may be a little older than the Briscoe Mounds. Excavations conducted by the University of Chicago in 1928 yielded, in addition to weapons, ornaments, and implements, the scattered skeletal remains of over 300 persons.",
+      "notes": "Located in Oakwood Cemetery.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 18,
+      "name": "Higginbotham Woods Earthwork",
+      "address": "Joliet, IL; from U.S. 30 west of the I-80 interchange, go north on Gougar Rd.",
+      "city": "Joliet",
+      "state": "IL",
+      "zip": "60431",
+      "phone": "815-741-7275",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://jolietpark.org"
+      ],
+      "description": "The remaining mound, now in a City of Joliet park, was part of a Potawatomi village and burial ground located on the south side of Hickory Creek.",
+      "notes": "Half of a mound can be seen about 175 yards north of the Rock Island Railroad tracks and 20 yards west of Gougar Road.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 19,
+      "name": "Briscoe Mounds",
+      "address": "25000-25094 Front St.",
+      "city": "Channahon",
+      "state": "IL",
+      "zip": "60410",
+      "phone": "815-727-8700",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://reconnectwithnature.org/preserves-trails/unimproved-preserves/briscoe-mounds/"
+      ],
+      "description": "Situated along the northern side of the Des Plaines River valley, this mound and village site is affiliated with the Langford tradition of the Upper Mississippian, dating to around AD 1200-1500. The mounds are the largest Native American burial mounds in northern Illinois.",
+      "notes": "Directions in revision memo: I-55 Bluff Road Exit, then south via the frontage road towards Channahon, IL.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 20,
+      "name": "Putnam County Historical Society Museum",
+      "address": "327 Old Hwy 26 (mailing address PO Box 74)",
+      "city": "Hennepin",
+      "state": "IL",
+      "zip": "61327",
+      "phone": "815-303-5104",
+      "hours": "Pulsifer House: Wed & Fri 10AM-3PM; Agriculture and Historical Museum: 1st Saturday each month 9AM-1PM",
+      "websites": [
+        "https://pchistorical.com"
+      ],
+      "description": "Exhibits include locally collected Native American artifacts within displays on county and agricultural history.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 21,
+      "name": "LaSalle County Historical Society Museum",
+      "address": "101 E. Canal St. (at Mill)",
+      "city": "North Utica",
+      "state": "IL",
+      "zip": "61373",
+      "phone": "815-667-4861",
+      "hours": "Fri-Sun 12-4PM",
+      "websites": [
+        "https://www.lasallecountyhistoricalsociety.org/historical-attractions"
+      ],
+      "description": "The LaSalle County Historical Society has six facilities in total, but three in one place: the Canal Warehouse Museum, the Heritage Center, and the Aitken One-Room School House. The Warehouse Museum is housed in a former limestone warehouse erected in 1848 for the Illinois & Michigan Canal. It includes extensive displays of Native American artifacts, including those excavated from the Grand Village of the Kaskaskia, located across the Illinois River from Starved Rock. Other exhibits on the campus focus on the 19th century, coal mining in Illinois, the early 20th century, and the Civil War.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 22,
+      "name": "Starved Rock State Park",
+      "address": "Visitors\u2019 Center: 2678 East 873 Road",
+      "city": "Oglesby",
+      "state": "IL",
+      "zip": "61348",
+      "phone": "815-667-4726",
+      "hours": "Trails: Daily 7AM-Sunset; Visitors\u2019 Center: Daily 9AM-4PM except federal holidays Nov-Mar and Juneteenth",
+      "websites": [
+        "https://dnr.illinois.gov/parks/park.starvedrock.html"
+      ],
+      "description": "Starved Rock State Park stretches for miles along the south bank of the Illinois River, beginning at Route 178 and extending east to Illinois Canyon. Archaeological research demonstrated the region has been continuously occupied since it was settled by Native Americans early in the Paleoindian period. Exhibits at the Visitors\u2019 Center have displays on every period, from prehistory to the present.",
+      "notes": "",
+      "type": "state park"
+    },
+    {
+      "number": 23,
+      "name": "Grundy County Historical Society",
+      "address": "510 W Illinois Ave. (at Nettle)",
+      "city": "Morris",
+      "state": "IL",
+      "zip": "60450",
+      "phone": "815-942-4880",
+      "hours": "Wed-Sat 10AM-4PM",
+      "websites": [
+        "https://grundycountyhs.org/"
+      ],
+      "description": "Exhibits document county prehistory and history, including locally collected artifacts.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 24,
+      "name": "Illinois and Michigan Canal National Heritage Area (Canal Corridor Association)",
+      "address": "I&M Canal Visitors\u2019 Center, Gift Shop and Cafe: 754 First Street",
+      "city": "LaSalle",
+      "state": "IL",
+      "zip": "61301",
+      "phone": "815-220-1848",
+      "hours": "Wed-Sun 8AM-4PM",
+      "websites": [
+        "https://iandmcanal.org/"
+      ],
+      "description": "The Illinois and Michigan Canal, completed in 1848, extended 97 miles from Chicago to Peru-LaSalle. The Heritage Area united sixty communities in a network dedicated to preserving the memory of how important the canal was to the development of Illinois and the United States generally. Many of the member organizations have exhibits that document both the prehistory and history of this part of the Illinois Valley and neighboring regions affected by it.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 25,
+      "name": "Midewin National Tallgrass Prairie",
+      "address": "Visitors\u2019 Welcome Center: 30239 S. State Rte. 53",
+      "city": "Wilmington",
+      "state": "IL",
+      "zip": "60481",
+      "phone": "815-423-6370",
+      "hours": "Trails: Daily 4AM-10PM; Welcome Center: Nov-Mar Mon-Fri 8AM-4:30PM; May-Oct Mon-Sat 8AM-4:30PM",
+      "websites": [
+        "https://www.fs.usda.gov/r09/midewin"
+      ],
+      "description": "Visitors can learn about prairie ecology and early Native American inhabitants at the Welcome Center.",
+      "notes": "",
+      "type": "natural area"
+    },
+    {
+      "number": 26,
+      "name": "Kankakee River State Park",
+      "address": "5314 W. Rt. 102",
+      "city": "Bourbonnais",
+      "state": "IL",
+      "zip": "60914",
+      "phone": "815-933-1383",
+      "hours": "Check website for current closure dates and hours",
+      "websites": [
+        "https://dnr.illinois.gov/parks/park.kankakeeriver.html"
+      ],
+      "description": "The park includes several documented archaeological sites along the Kankakee River corridor.",
+      "notes": "",
+      "type": "state park"
+    },
+    {
+      "number": 27,
+      "name": "Kankakee County Historical Museum",
+      "address": "801 S. 8th St.",
+      "city": "Kankakee",
+      "state": "IL",
+      "zip": "60901",
+      "phone": "815-932-5279",
+      "hours": "Thu-Sat 9AM-5PM",
+      "websites": [
+        "https://kankakeecountymuseum.com"
+      ],
+      "description": "Permanent exhibits include American Indian artifacts related to cultural periods, with an extensive display of Potawatomi material from a nearby site.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 28,
+      "name": "Camp Douglas",
+      "address": "South Martin Luther King Drive and E. 33rd St.",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60616",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.campdouglas.org/"
+      ],
+      "description": "Centered between 31st and 33rd Streets, north to south, and between Cottage Grove and King Drive, east to west, there is little evidence of Camp Douglas in the 2020s. However, during the Civil War it was the largest U.S. military facility in Illinois, serving variously as a training camp for Union soldiers, Confederate prisoner of war camp, and demobilization camp once fighting ended. Several archaeological projects confirmed the location and outlines of the camp.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 29,
+      "name": "Stephen A. Douglas Tomb",
+      "address": "636 E. 35th St.",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60616",
+      "phone": "312-225-2620",
+      "hours": "Fri-Sun 10AM-4PM",
+      "websites": [
+        "https://dnrhistoric.illinois.gov/experience/sites/site.douglas-tomb.html"
+      ],
+      "description": "During his lifetime Senator Stephen A. Douglas was known as a fierce promoter of Illinois and Abraham Lincoln\u2019s strongest rival. In recognition of his life of service he is buried in a mausoleum topped with a 46-foot-high column and tall statue of Senator Douglas.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 30,
+      "name": "Oak Woods Cemetery",
+      "address": "1035 East 67th Street",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60637",
+      "phone": "773-288-3800",
+      "hours": "Daily 8AM-4:30PM",
+      "websites": [
+        "https://www.dignitymemorial.com/funeral-homes/illinois/chicago/oak-woods-cemetery/6248"
+      ],
+      "description": "The cemetery includes a mass grave of Confederate prisoners of war containing more than 4,000 burials.",
+      "notes": "",
+      "type": "historic site"
+    }
+  ]
+}

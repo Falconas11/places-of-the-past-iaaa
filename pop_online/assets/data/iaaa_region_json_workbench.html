@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAAA Region JSON Workbench</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a31;
+      --panel-2: #18213d;
+      --text: #ecf1ff;
+      --muted: #aab6d3;
+      --accent: #84a8ff;
+      --good: #5ed39a;
+      --warn: #ffd166;
+      --bad: #ff7b7b;
+      --border: #2b3861;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #09101d 100%);
+      color: var(--text);
+    }
+    header {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(11,16,32,.95);
+      backdrop-filter: blur(8px);
+      z-index: 5;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 22px;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      min-height: calc(100vh - 74px);
+    }
+    .sidebar {
+      border-right: 1px solid var(--border);
+      padding: 16px;
+      background: rgba(18,26,49,.75);
+    }
+    .main {
+      padding: 16px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.18);
+    }
+    .card h2, .card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+    .muted { color: var(--muted); }
+    .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    button, input, select, textarea {
+      font: inherit;
+    }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 9px 12px;
+      cursor: pointer;
+    }
+    button.primary {
+      background: var(--accent);
+      color: #0b1020;
+      border-color: transparent;
+      font-weight: 600;
+    }
+    button.ghost {
+      background: transparent;
+    }
+    button:hover { filter: brightness(1.06); }
+    input[type="text"], select, textarea, input[type="number"] {
+      width: 100%;
+      padding: 9px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #0d1430;
+      color: var(--text);
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      background: #0d1430;
+    }
+    .pill.good { color: var(--good); }
+    .pill.warn { color: var(--warn); }
+    .pill.bad { color: var(--bad); }
+    .list {
+      max-height: 290px;
+      overflow: auto;
+      display: grid;
+      gap: 8px;
+    }
+    .region-item, .issue-item, .site-item {
+      padding: 10px 11px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #0d1430;
+      cursor: pointer;
+    }
+    .region-item.active, .site-item.active, .issue-item.active {
+      outline: 2px solid var(--accent);
+    }
+    .tiny { font-size: 12px; color: var(--muted); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .stat {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      background: #0d1430;
+    }
+    .stat .n {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 10px;
+    }
+    .site-toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .help {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .codebox {
+      white-space: pre-wrap;
+      background: #091127;
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      max-height: 200px;
+      overflow: auto;
+    }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+      .split, .grid-2, .stats, .field-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>IAAA Region JSON Workbench</h1>
+  <p>Load your region JSON files, run a global validator, recover or bulk-rewrite descriptions, then export cleaned files.</p>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="card">
+      <h2>1) Load current region files</h2>
+      <div class="help">Select all region JSON files you are actively editing.</div>
+      <div style="height:8px"></div>
+      <input id="currentFiles" type="file" accept=".json,application/json" multiple />
+      <div style="height:8px"></div>
+      <button class="primary" id="loadCurrentBtn">Load current files</button>
+      <div style="height:10px"></div>
+      <div class="tiny" id="currentLoadMsg">No files loaded yet.</div>
+    </div>
+
+    <div class="card">
+      <h2>2) Optional backup/original files</h2>
+      <div class="help">Load older region JSONs if you want to recover richer descriptions from a previous version.</div>
+      <div style="height:8px"></div>
+      <input id="backupFiles" type="file" accept=".json,application/json" multiple />
+      <div style="height:8px"></div>
+      <button id="loadBackupBtn">Load backup files</button>
+      <div style="height:10px"></div>
+      <div class="tiny" id="backupLoadMsg">No backup files loaded.</div>
+    </div>
+
+    <div class="card">
+      <h2>Regions</h2>
+      <div class="list" id="regionList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Export</h2>
+      <div class="row">
+        <button class="primary" id="downloadAllBtn">Download all region files</button>
+        <button id="downloadMergedBtn">Download merged JSON</button>
+      </div>
+      <div style="height:8px"></div>
+      <div class="help">Each region keeps its own file. The merged export is only for QA / backup.</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="card">
+      <h2>Global validation summary</h2>
+      <div class="stats">
+        <div class="stat"><div class="n" id="statRegions">0</div><div class="tiny">Regions loaded</div></div>
+        <div class="stat"><div class="n" id="statSites">0</div><div class="tiny">Sites loaded</div></div>
+        <div class="stat"><div class="n" id="statIssues">0</div><div class="tiny">Validation issues</div></div>
+      </div>
+      <div style="height:10px"></div>
+      <div class="row">
+        <button class="primary" id="runValidationBtn">Run global validator</button>
+        <button id="normalizeTypesBtn">Normalize obvious type values</button>
+        <button id="normalizeUrlsBtn">Normalize website URLs</button>
+      </div>
+      <div style="height:10px"></div>
+      <div class="codebox" id="validationSummary">Load files and run validation.</div>
+    </div>
+
+    <div class="split">
+      <div class="card">
+        <h2>Issues</h2>
+        <div class="row">
+          <select id="issueFilter">
+            <option value="all">All issues</option>
+            <option value="missing_hours">Missing hours</option>
+            <option value="missing_phone">Missing phone</option>
+            <option value="missing_zip">Missing zip</option>
+            <option value="missing_website">Missing website</option>
+            <option value="bad_type">Bad type</option>
+            <option value="bad_url">Bad URL</option>
+            <option value="description_short">Description too short</option>
+          </select>
+        </div>
+        <div style="height:10px"></div>
+        <div class="list" id="issueList"></div>
+      </div>
+
+      <div class="card">
+        <h2>Description tools</h2>
+        <div class="help">Use backup descriptions where possible. If no backup exists, generate a draft from the current site fields. This only changes <strong>description</strong>.</div>
+        <div style="height:10px"></div>
+        <div class="row">
+          <button class="primary" id="recoverDescriptionsBtn">Bulk recover from backup</button>
+          <button id="draftDescriptionsBtn">Bulk draft descriptions</button>
+          <button id="reportDescriptionsBtn">Report description candidates</button>
+        </div>
+        <div style="height:10px"></div>
+        <div class="codebox" id="descriptionReport">No description actions yet.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Region / site editor</h2>
+      <div class="site-toolbar">
+        <select id="siteFilter">
+          <option value="all">All sites</option>
+          <option value="issue_only">Only sites with issues</option>
+        </select>
+        <input id="siteSearch" type="text" placeholder="Search by name / city / number" style="max-width:320px" />
+      </div>
+      <div class="split">
+        <div>
+          <div class="list" id="siteList"></div>
+        </div>
+        <div>
+          <div class="field-grid">
+            <div><div class="tiny">Number</div><input id="f_number" type="number" /></div>
+            <div><div class="tiny">Type</div><input id="f_type" type="text" /></div>
+            <div><div class="tiny">Name</div><input id="f_name" type="text" /></div>
+            <div><div class="tiny">City</div><input id="f_city" type="text" /></div>
+            <div><div class="tiny">Address</div><input id="f_address" type="text" /></div>
+            <div><div class="tiny">State</div><input id="f_state" type="text" /></div>
+            <div><div class="tiny">ZIP</div><input id="f_zip" type="text" /></div>
+            <div><div class="tiny">Phone</div><input id="f_phone" type="text" /></div>
+            <div style="grid-column: 1 / -1;"><div class="tiny">Hours</div><input id="f_hours" type="text" /></div>
+            <div style="grid-column: 1 / -1;"><div class="tiny">Websites (one per line)</div><textarea id="f_websites"></textarea></div>
+            <div style="grid-column: 1 / -1;"><div class="tiny">Description</div><textarea id="f_description"></textarea></div>
+            <div style="grid-column: 1 / -1;"><div class="tiny">Notes</div><textarea id="f_notes"></textarea></div>
+          </div>
+          <div style="height:10px"></div>
+          <div class="row">
+            <button class="primary" id="saveSiteBtn">Save site</button>
+            <button id="useBackupDescBtn">Use backup description</button>
+            <button id="draftOneDescBtn">Draft description</button>
+          </div>
+          <div style="height:10px"></div>
+          <div class="codebox" id="siteInspector">No site selected.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+  const state = {
+    currentRegions: new Map(),   // region -> json
+    backupRegions: new Map(),    // region -> json
+    selectedRegion: null,
+    selectedSiteNumber: null,
+    issues: [],
+  };
+
+  const $ = id => document.getElementById(id);
+
+  function deepClone(obj) {
+    return JSON.parse(JSON.stringify(obj));
+  }
+
+  function parseFiles(fileList) {
+    return Promise.all([...fileList].map(file => file.text().then(text => ({ file, json: JSON.parse(text) }))));
+  }
+
+  function pretty(obj) {
+    return JSON.stringify(obj, null, 2);
+  }
+
+  function normalizeUrl(u) {
+    const s = String(u || "").trim();
+    if (!s) return "";
+    if (/^https?:\/\//i.test(s)) return s;
+    return "https://" + s.replace(/^\/+/, "");
+  }
+
+  function normalizeType(site) {
+    const raw = String(site.type || "").trim().toLowerCase();
+    const n = String(site.name || "").toLowerCase();
+    if (!raw || raw === "type placeholder") {
+      if (n.includes("museum")) return "museum";
+      if (n.includes("park")) return "park";
+      if (n.includes("preserve")) return "natural area";
+      if (n.includes("mound") || n.includes("earthwork") || n.includes("site")) return "archaeological site";
+      if (n.includes("historic site") || n.includes("fort") || n.includes("courthouse") || n.includes("house")) return "historic site";
+      if (n.includes("library")) return "library";
+      if (n.includes("visitor center")) return "visitor center";
+      if (n.includes("nature center")) return "nature center";
+      return "";
+    }
+    return raw;
+  }
+
+  function isOutdoor(site) {
+    const type = normalizeType(site);
+    return ["archaeological site", "park", "natural area", "state park"].includes(type);
+  }
+
+  function isMuseumLike(site) {
+    const type = normalizeType(site);
+    return ["museum", "historic site", "visitor center", "nature center", "library"].includes(type);
+  }
+
+  function genericDescription(desc) {
+    const s = String(desc || "").trim().toLowerCase();
+    if (!s) return true;
+    return s.length < 45 ||
+      s === "historic site." ||
+      s === "museum." ||
+      s.includes("local history museum.") ||
+      s.includes("archaeological site.") ||
+      s.includes("major mississippian mound site");
+  }
+
+  function matchBackupSite(regionName, site) {
+    const backup = state.backupRegions.get(regionName);
+    if (!backup) return null;
+    let found = backup.sites.find(s => Number(s.number) === Number(site.number));
+    if (found) return found;
+    return backup.sites.find(s => String(s.name || "").trim().toLowerCase() === String(site.name || "").trim().toLowerCase()) || null;
+  }
+
+  function draftDescription(site) {
+    const name = String(site.name || "").trim();
+    const city = String(site.city || "").trim();
+    const type = normalizeType(site);
+    if (!name) return "";
+    if (type === "museum") return `${name} is a museum in ${city || "Illinois"} with exhibits related to local history and Native American artifacts.`;
+    if (type === "historic site") return `${name} is a historic site in ${city || "Illinois"} associated with regional history and archaeological interpretation.`;
+    if (type === "visitor center") return `${name} is a visitor center in ${city || "Illinois"} with exhibits interpreting local history, archaeology, or the surrounding landscape.`;
+    if (type === "nature center") return `${name} is a nature center in ${city || "Illinois"} with educational displays that include regional archaeology or Native American history.`;
+    if (type === "library") return `${name} is a public library in ${city || "Illinois"} with local historical displays that include Native American artifacts or related materials.`;
+    if (type === "park" || type === "state park") return `${name} is a park in ${city || "Illinois"} associated with archaeology, Native American history, or historically significant landscapes.`;
+    if (type === "natural area") return `${name} is a natural area in ${city || "Illinois"} that includes archaeological resources or historically significant landscape features.`;
+    if (type === "archaeological site") return `${name} is an archaeological site in ${city || "Illinois"} associated with Native American occupation, mound building, or other significant cultural remains.`;
+    return `${name} is a cultural heritage site in ${city || "Illinois"} with historical or archaeological significance.`;
+  }
+
+  function validateAll() {
+    const issues = [];
+    for (const [regionName, region] of state.currentRegions.entries()) {
+      const seen = new Set();
+      const nums = [];
+      for (const site of region.sites) {
+        const n = Number(site.number);
+        nums.push(n);
+        if (seen.has(n)) {
+          issues.push({ region: regionName, number: n, kind: "duplicate_number", msg: `Duplicate site number ${n}` });
+        }
+        seen.add(n);
+
+        const type = normalizeType(site);
+        if (!type || type === "type placeholder") {
+          issues.push({ region: regionName, number: n, kind: "bad_type", msg: "Missing or placeholder type" });
+        }
+        if (isMuseumLike(site) && !String(site.hours || "").trim()) {
+          issues.push({ region: regionName, number: n, kind: "missing_hours", msg: "Museum-like site missing hours" });
+        }
+        if (isOutdoor(site) && !String(site.hours || "").trim() && !String(site.notes || "").toLowerCase().includes("appointment")) {
+          issues.push({ region: regionName, number: n, kind: "missing_hours", msg: "Outdoor site missing hours / access note" });
+        }
+        if (isMuseumLike(site) && !String(site.phone || "").trim()) {
+          issues.push({ region: regionName, number: n, kind: "missing_phone", msg: "Museum-like site missing phone" });
+        }
+        if (!String(site.zip || "").trim() && (String(site.city || "").trim() || String(site.address || "").trim())) {
+          issues.push({ region: regionName, number: n, kind: "missing_zip", msg: "Missing ZIP" });
+        }
+        if (isMuseumLike(site) && (!Array.isArray(site.websites) || site.websites.length === 0)) {
+          issues.push({ region: regionName, number: n, kind: "missing_website", msg: "Museum-like site missing website" });
+        }
+        if (genericDescription(site.description)) {
+          issues.push({ region: regionName, number: n, kind: "description_short", msg: "Description is short / generic" });
+        }
+        for (const u of (site.websites || [])) {
+          const su = String(u || "").trim();
+          if (!su) continue;
+          if (!/^https?:\/\//i.test(su)) {
+            issues.push({ region: regionName, number: n, kind: "bad_url", msg: `Website not normalized: ${su}` });
+          }
+        }
+      }
+      nums.sort((a,b) => a-b);
+      for (let i = 0; i < nums.length; i++) {
+        const expected = i + 1;
+        if (nums[i] !== expected) {
+          issues.push({ region: regionName, number: nums[i], kind: "number_gap", msg: `Number sequence issue near ${nums[i]} (expected ${expected})` });
+          break;
+        }
+      }
+    }
+    state.issues = issues;
+    renderIssues();
+    renderValidationSummary();
+    renderSiteList();
+  }
+
+  function renderValidationSummary() {
+    const regions = [...state.currentRegions.values()];
+    const sites = regions.reduce((acc, r) => acc + (r.sites?.length || 0), 0);
+    $("statRegions").textContent = regions.length;
+    $("statSites").textContent = sites;
+    $("statIssues").textContent = state.issues.length;
+
+    const grouped = {};
+    for (const issue of state.issues) grouped[issue.kind] = (grouped[issue.kind] || 0) + 1;
+    const lines = Object.entries(grouped).sort((a,b) => b[1]-a[1]).map(([k,v]) => `${k}: ${v}`);
+    $("validationSummary").textContent = lines.length ? lines.join("\n") : "No issues found.";
+  }
+
+  function renderRegionList() {
+    const el = $("regionList");
+    el.innerHTML = "";
+    const entries = [...state.currentRegions.keys()].sort();
+    for (const region of entries) {
+      const div = document.createElement("div");
+      div.className = "region-item" + (state.selectedRegion === region ? " active" : "");
+      const siteCount = state.currentRegions.get(region).sites.length;
+      const issueCount = state.issues.filter(i => i.region === region).length;
+      div.innerHTML = `<strong>${region}</strong><div class="tiny">${siteCount} sites · ${issueCount} issues</div>`;
+      div.onclick = () => {
+        state.selectedRegion = region;
+        state.selectedSiteNumber = null;
+        renderRegionList();
+        renderSiteList();
+        $("siteInspector").textContent = "Select a site.";
+      };
+      el.appendChild(div);
+    }
+  }
+
+  function renderIssues() {
+    const filter = $("issueFilter").value;
+    const el = $("issueList");
+    el.innerHTML = "";
+    let issues = state.issues;
+    if (filter !== "all") issues = issues.filter(i => i.kind === filter);
+
+    for (const issue of issues.slice(0, 500)) {
+      const div = document.createElement("div");
+      div.className = "issue-item";
+      div.innerHTML = `<strong>${issue.region} #${issue.number}</strong><div class="tiny">${issue.kind}</div><div>${issue.msg}</div>`;
+      div.onclick = () => {
+        state.selectedRegion = issue.region;
+        state.selectedSiteNumber = issue.number;
+        renderRegionList();
+        renderSiteList();
+        loadSelectedSite();
+      };
+      el.appendChild(div);
+    }
+    if (!issues.length) el.innerHTML = `<div class="tiny">No matching issues.</div>`;
+  }
+
+  function currentRegion() {
+    return state.currentRegions.get(state.selectedRegion) || null;
+  }
+
+  function siteIssues(regionName, siteNumber) {
+    return state.issues.filter(i => i.region === regionName && Number(i.number) === Number(siteNumber));
+  }
+
+  function renderSiteList() {
+    const el = $("siteList");
+    el.innerHTML = "";
+    const region = currentRegion();
+    if (!region) {
+      el.innerHTML = `<div class="tiny">Select a region.</div>`;
+      return;
+    }
+    const search = $("siteSearch").value.trim().toLowerCase();
+    const issueOnly = $("siteFilter").value === "issue_only";
+    let sites = [...region.sites];
+    if (search) {
+      sites = sites.filter(s => [s.number, s.name, s.city, s.address].join(" ").toLowerCase().includes(search));
+    }
+    if (issueOnly) {
+      sites = sites.filter(s => siteIssues(region.region, s.number).length);
+    }
+    for (const site of sites) {
+      const div = document.createElement("div");
+      div.className = "site-item" + (Number(state.selectedSiteNumber) === Number(site.number) ? " active" : "");
+      const issues = siteIssues(region.region, site.number).length;
+      div.innerHTML = `<strong>#${site.number} ${site.name}</strong><div class="tiny">${site.city || "—"} · ${normalizeType(site) || "no type"} · ${issues} issues</div>`;
+      div.onclick = () => {
+        state.selectedSiteNumber = site.number;
+        renderSiteList();
+        loadSelectedSite();
+      };
+      el.appendChild(div);
+    }
+    if (!sites.length) el.innerHTML = `<div class="tiny">No sites match this filter.</div>`;
+  }
+
+  function loadSelectedSite() {
+    const region = currentRegion();
+    if (!region || state.selectedSiteNumber == null) return;
+    const site = region.sites.find(s => Number(s.number) === Number(state.selectedSiteNumber));
+    if (!site) return;
+
+    $("f_number").value = site.number ?? "";
+    $("f_type").value = normalizeType(site) || "";
+    $("f_name").value = site.name ?? "";
+    $("f_city").value = site.city ?? "";
+    $("f_address").value = site.address ?? "";
+    $("f_state").value = site.state ?? "";
+    $("f_zip").value = site.zip ?? "";
+    $("f_phone").value = site.phone ?? "";
+    $("f_hours").value = site.hours ?? "";
+    $("f_websites").value = (site.websites || []).join("\n");
+    $("f_description").value = site.description ?? "";
+    $("f_notes").value = site.notes ?? "";
+
+    const backup = matchBackupSite(region.region, site);
+    const issues = siteIssues(region.region, site.number);
+    $("siteInspector").textContent = [
+      `Region: ${region.region}`,
+      `Current type: ${normalizeType(site) || "(empty)"}`,
+      `Issues: ${issues.length ? issues.map(i => i.kind).join(", ") : "none"}`,
+      backup ? `Backup description available: yes` : `Backup description available: no`
+    ].join("\n");
+  }
+
+  function saveSelectedSite() {
+    const region = currentRegion();
+    if (!region || state.selectedSiteNumber == null) return;
+    const idx = region.sites.findIndex(s => Number(s.number) === Number(state.selectedSiteNumber));
+    if (idx < 0) return;
+
+    region.sites[idx] = {
+      ...region.sites[idx],
+      number: Number($("f_number").value),
+      type: $("f_type").value.trim(),
+      name: $("f_name").value.trim(),
+      city: $("f_city").value.trim(),
+      address: $("f_address").value.trim(),
+      state: $("f_state").value.trim(),
+      zip: $("f_zip").value.trim(),
+      phone: $("f_phone").value.trim(),
+      hours: $("f_hours").value.trim(),
+      websites: $("f_websites").value.split("\n").map(s => s.trim()).filter(Boolean),
+      description: $("f_description").value.trim(),
+      notes: $("f_notes").value.trim(),
+    };
+    state.selectedSiteNumber = region.sites[idx].number;
+    validateAll();
+    renderSiteList();
+    loadSelectedSite();
+  }
+
+  function recoverDescriptions() {
+    let changed = 0;
+    for (const [regionName, region] of state.currentRegions.entries()) {
+      for (const site of region.sites) {
+        const backup = matchBackupSite(regionName, site);
+        if (!backup) continue;
+        const current = String(site.description || "").trim();
+        const backupDesc = String(backup.description || "").trim();
+        if (!backupDesc) continue;
+        if (!current || genericDescription(current) || backupDesc.length > current.length + 40) {
+          site.description = backupDesc;
+          changed++;
+        }
+      }
+    }
+    $("descriptionReport").textContent = `Recovered/replaced descriptions: ${changed}`;
+    validateAll();
+    loadSelectedSite();
+  }
+
+  function draftDescriptions() {
+    let changed = 0;
+    for (const [, region] of state.currentRegions.entries()) {
+      for (const site of region.sites) {
+        const current = String(site.description || "").trim();
+        if (!current || genericDescription(current)) {
+          site.description = draftDescription(site);
+          changed++;
+        }
+      }
+    }
+    $("descriptionReport").textContent = `Drafted descriptions: ${changed}`;
+    validateAll();
+    loadSelectedSite();
+  }
+
+  function reportDescriptionCandidates() {
+    const lines = [];
+    for (const [regionName, region] of state.currentRegions.entries()) {
+      for (const site of region.sites) {
+        const backup = matchBackupSite(regionName, site);
+        if (genericDescription(site.description) || backup) {
+          lines.push(`${regionName} #${site.number} ${site.name}`);
+          lines.push(`  current: ${String(site.description || "").slice(0,140) || "(empty)"}`);
+          if (backup?.description) lines.push(`  backup:  ${String(backup.description).slice(0,140)}`);
+          lines.push(`  draft:   ${draftDescription(site).slice(0,140)}`);
+        }
+      }
+    }
+    $("descriptionReport").textContent = lines.length ? lines.join("\n") : "No description candidates found.";
+  }
+
+  function normalizeTypes() {
+    let changed = 0;
+    for (const [, region] of state.currentRegions.entries()) {
+      for (const site of region.sites) {
+        const t = normalizeType(site);
+        if (t && t !== site.type) {
+          site.type = t;
+          changed++;
+        }
+      }
+    }
+    $("validationSummary").textContent = `Normalized type values: ${changed}`;
+    validateAll();
+    loadSelectedSite();
+  }
+
+  function normalizeUrls() {
+    let changed = 0;
+    for (const [, region] of state.currentRegions.entries()) {
+      for (const site of region.sites) {
+        const before = JSON.stringify(site.websites || []);
+        site.websites = (site.websites || []).map(normalizeUrl).filter(Boolean);
+        const after = JSON.stringify(site.websites || []);
+        if (before !== after) changed++;
+      }
+    }
+    $("validationSummary").textContent = `Normalized website arrays: ${changed}`;
+    validateAll();
+    loadSelectedSite();
+  }
+
+  function download(name, text, type = "application/json;charset=utf-8") {
+    const blob = new Blob([text], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function downloadAllRegions() {
+    for (const [regionName, region] of state.currentRegions.entries()) {
+      const fileName = regionName.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "") + ".json";
+      download(fileName, JSON.stringify(region, null, 2));
+    }
+  }
+
+  function downloadMerged() {
+    const regions = [...state.currentRegions.values()].sort((a,b) => a.region.localeCompare(b.region));
+    const metadata = { generated_by: "IAAA Region JSON Workbench", exported_at: new Date().toISOString() };
+    download("merged_regions.json", JSON.stringify({ metadata, regions }, null, 2));
+  }
+
+  $("loadCurrentBtn").onclick = async () => {
+    const files = $("currentFiles").files;
+    if (!files.length) return;
+    const parsed = await parseFiles(files);
+    state.currentRegions.clear();
+    for (const { json, file } of parsed) {
+      if (!json.region || !Array.isArray(json.sites)) continue;
+      state.currentRegions.set(json.region, deepClone(json));
+    }
+    $("currentLoadMsg").textContent = `Loaded ${state.currentRegions.size} current region file(s).`;
+    state.selectedRegion = [...state.currentRegions.keys()].sort()[0] || null;
+    state.selectedSiteNumber = null;
+    validateAll();
+    renderRegionList();
+    renderSiteList();
+  };
+
+  $("loadBackupBtn").onclick = async () => {
+    const files = $("backupFiles").files;
+    if (!files.length) return;
+    const parsed = await parseFiles(files);
+    state.backupRegions.clear();
+    for (const { json } of parsed) {
+      if (!json.region || !Array.isArray(json.sites)) continue;
+      state.backupRegions.set(json.region, deepClone(json));
+    }
+    $("backupLoadMsg").textContent = `Loaded ${state.backupRegions.size} backup region file(s).`;
+    loadSelectedSite();
+  };
+
+  $("runValidationBtn").onclick = validateAll;
+  $("normalizeTypesBtn").onclick = normalizeTypes;
+  $("normalizeUrlsBtn").onclick = normalizeUrls;
+  $("recoverDescriptionsBtn").onclick = recoverDescriptions;
+  $("draftDescriptionsBtn").onclick = draftDescriptions;
+  $("reportDescriptionsBtn").onclick = reportDescriptionCandidates;
+  $("saveSiteBtn").onclick = saveSelectedSite;
+  $("useBackupDescBtn").onclick = () => {
+    const region = currentRegion();
+    if (!region || state.selectedSiteNumber == null) return;
+    const site = region.sites.find(s => Number(s.number) === Number(state.selectedSiteNumber));
+    const backup = matchBackupSite(region.region, site);
+    if (backup?.description) {
+      $("f_description").value = backup.description;
+      saveSelectedSite();
+    }
+  };
+  $("draftOneDescBtn").onclick = () => {
+    const region = currentRegion();
+    if (!region || state.selectedSiteNumber == null) return;
+    const site = region.sites.find(s => Number(s.number) === Number(state.selectedSiteNumber));
+    $("f_description").value = draftDescription(site);
+    saveSelectedSite();
+  };
+
+  $("issueFilter").onchange = renderIssues;
+  $("siteFilter").onchange = renderSiteList;
+  $("siteSearch").oninput = renderSiteList;
+  $("downloadAllBtn").onclick = downloadAllRegions;
+  $("downloadMergedBtn").onclick = downloadMerged;
+</script>
+</body>
+</html>

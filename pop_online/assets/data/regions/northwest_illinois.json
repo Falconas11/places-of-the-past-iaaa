@@ -1,0 +1,389 @@
+{
+  "region": "Northwest Illinois",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Gramercy Park Dunleith Mound Group",
+      "address": "341 Gramercy St",
+      "city": "East Dubuque",
+      "state": "IL",
+      "zip": "61025",
+      "phone": "815-747-3416",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.cityofeastdubuque.com/our-community/gramercy-park"
+      ],
+      "description": "The park, situated on a high bluff overlooking the Mississippi River valley, includes 20 mounds still standing of an original group of 26 Middle Woodland conical mounds.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 2,
+      "name": "Galena & U.S. Grant Museum",
+      "address": "211 S Bench St",
+      "city": "Galena",
+      "state": "IL",
+      "zip": "61036",
+      "phone": "815-777-9129",
+      "hours": "Daily 9AM-4:30PM",
+      "websites": [
+        "https://galenahistorymuseum.org"
+      ],
+      "description": "Exhibits include Native American artifacts recovered from the Galena area along with regional history collections.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 3,
+      "name": "Apple River Fort State Historic Site",
+      "address": "311 E Myrtle St",
+      "city": "Elizabeth",
+      "state": "IL",
+      "zip": "61028",
+      "phone": "815-858-2028",
+      "hours": "May-Oct Wed-Sun 9AM-5PM; Nov-Apr Fri-Sat 9AM-4PM",
+      "websites": [
+        "https://www.appleriverfort.org/"
+      ],
+      "description": "An interpretive center relates the story of the Black Hawk War, as well as the interactions between the Sauk and Mesquakie (Fox) and lead miners in the early 19th century.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 4,
+      "name": "Wapello Land & Water Reserve",
+      "address": "8642 IL-84",
+      "city": "Hanover",
+      "state": "IL",
+      "zip": "61041",
+      "phone": "815-777-9129",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://jdcf.org"
+      ],
+      "description": "This reserve preserves Woodland and Mississippian archaeological sites within a protected landscape along the upper Mississippi region.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 5,
+      "name": "Macktown Living History Education Center",
+      "address": "2221 Freeport Rd",
+      "city": "Rockton",
+      "state": "IL",
+      "zip": "61072",
+      "phone": "815-624-4200",
+      "hours": "Second Sunday each month; other visits by reservation",
+      "websites": [
+        "https://macktownlivinghistory.org"
+      ],
+      "description": "The education center highlights archaeology investigating the 1838 to 1850 settlement, as well as Native habitations dating back 10,000 years; volunteers are welcome at annual summer field work.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 6,
+      "name": "Carl and Myrna Nygren Wetland Preserve",
+      "address": "3714 W Rockton Rd",
+      "city": "Rockton",
+      "state": "IL",
+      "zip": "61072",
+      "phone": "815-964-6666",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.naturalland.org/carl-myrna-nygren-wetland/"
+      ],
+      "description": "This wetland preserve includes Native American mound sites within a restored natural landscape.",
+      "notes": "",
+      "type": "natural area"
+    },
+    {
+      "number": 7,
+      "name": "Burpee Museum of Natural History",
+      "address": "737 N Main St",
+      "city": "Rockford",
+      "state": "IL",
+      "zip": "61103",
+      "phone": "815-965-3433",
+      "hours": "Daily 10AM-5PM; Fri-Sat until 8PM",
+      "websites": [
+        "https://burpee.org"
+      ],
+      "description": "Exhibits include a timeline display, \u201cThe First People,\u201d with Native American artifacts from the Illinois\u2013Wisconsin state line region.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 8,
+      "name": "Beattie Mound Group",
+      "address": "N Main St & Park Ave",
+      "city": "Rockford",
+      "state": "IL",
+      "zip": "61103",
+      "phone": "815-987-8800",
+      "hours": "Daily 8AM-10PM",
+      "websites": [
+        "https://www.rockfordparkdistrict.org"
+      ],
+      "description": "This Late Woodland effigy mound group is preserved within a public park setting in Rockford.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 9,
+      "name": "Thomson Mound",
+      "address": "Lewis Ave",
+      "city": "Thomson",
+      "state": "IL",
+      "zip": "61285",
+      "phone": "815-259-3628",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://thomsonil.com"
+      ],
+      "description": "This Woodland period mound stands along the Mississippi River corridor near Thomson.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 10,
+      "name": "Jarrett Prairie Center",
+      "address": "7993 N River Rd",
+      "city": "Byron",
+      "state": "IL",
+      "zip": "61010",
+      "phone": "815-234-8535",
+      "hours": "Mon-Fri 8AM-4:30PM; Tue & Thu until 8PM; Sat 9AM-4PM; Sun 1-4PM",
+      "websites": [
+        "https://byronforestpreserve.com"
+      ],
+      "description": "Museum displays include information on the archaeology of the Rock River area of Ogle County, including interpretation along the Diana Nora Nature Trail.",
+      "notes": "",
+      "type": "nature center"
+    },
+    {
+      "number": 11,
+      "name": "Albany Mounds State Historic Site",
+      "address": "S Cherry St",
+      "city": "Albany",
+      "state": "IL",
+      "zip": "61230",
+      "phone": "309-788-0177",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://albanymounds.com"
+      ],
+      "description": "This large Middle Woodland mound complex preserves one of the most important prehistoric mound groups in northwestern Illinois.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 12,
+      "name": "Sinnissippi Park",
+      "address": "IL-2",
+      "city": "Sterling",
+      "state": "IL",
+      "zip": "61081",
+      "phone": "815-622-6200",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.sterlingparks.org/location/sinnissippi-park/"
+      ],
+      "description": "This park includes Hopewellian burial mounds associated with prehistoric Native American occupation in the Sterling area.",
+      "notes": "",
+      "type": "archaeological site"
+    },
+    {
+      "number": 13,
+      "name": "John Deere Historic Site",
+      "address": "8334 S Clinton St",
+      "city": "Dixon",
+      "state": "IL",
+      "zip": "61021",
+      "phone": "815-652-4551",
+      "hours": "May-Oct Wed-Sun 9AM-5PM",
+      "websites": [
+        "https://www.deere.com"
+      ],
+      "description": "Archaeological excavations at the blacksmith shop associated with John Deere\u2019s early career are interpreted at this historic site.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 14,
+      "name": "Loveland Community House Museum",
+      "address": "513 W Second St",
+      "city": "Dixon",
+      "state": "IL",
+      "zip": "61021",
+      "phone": "815-284-2741",
+      "hours": "Thu-Fri 9AM-2PM; Sat 10AM-3PM",
+      "websites": [
+        "https://lovelandcommunityhouse.org/museum/"
+      ],
+      "description": "Exhibits include prehistoric stone artifacts collected from the Dixon area within a local history museum setting.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 15,
+      "name": "Northwest Territory Historic Center",
+      "address": "205 W Fifth St",
+      "city": "Dixon",
+      "state": "IL",
+      "zip": "61021",
+      "phone": "815-288-5508",
+      "hours": "Tue-Sat 9AM-4PM",
+      "websites": [
+        "https://nthc.org/"
+      ],
+      "description": "Permanent exhibit \u201cAn Unchanged Land\u201d presents Native American history and the Black Hawk War in northwestern Illinois.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 16,
+      "name": "Rock Island Arsenal Museum",
+      "address": "Building 60, Rock Island Arsenal",
+      "city": "Rock Island",
+      "state": "IL",
+      "zip": "61299",
+      "phone": "309-782-5021",
+      "hours": "Tue-Sat 12PM-4PM",
+      "websites": [
+        "https://arsenalhistoricalsociety.org/museum/index.html"
+      ],
+      "description": "The museum\u2019s extensive weapons exhibits include North American battlefield specimens and related military history collections.",
+      "notes": "Visitors use the Moline entrance to Arsenal Island.",
+      "type": "museum"
+    },
+    {
+      "number": 17,
+      "name": "Colonel Davenport Home",
+      "address": "North Shore of Arsenal Island",
+      "city": "Rock Island",
+      "state": "IL",
+      "zip": "61204",
+      "phone": "309-786-7336",
+      "hours": "May-Oct Thu-Sun 12PM-4PM",
+      "websites": [
+        "https://davenporthouse.org"
+      ],
+      "description": "Artifacts found during excavations at George Davenport\u2019s 1833 home are exhibited at this historic house site.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 18,
+      "name": "Black Hawk State Historic Site Hauberg Indian Museum",
+      "address": "1510 46th Ave",
+      "city": "Rock Island",
+      "state": "IL",
+      "zip": "61201",
+      "phone": "309-788-9536",
+      "hours": "Wed-Sun 9AM-12PM, 1PM-5PM",
+      "websites": [
+        "https://blackhawkpark.org/museum"
+      ],
+      "description": "Museum exhibits include a time line with artifact displays and 18th- to 19th-century materials from Sauk and Mesquakie communities who lived nearby.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 19,
+      "name": "Rock Island County Historical Society Museum",
+      "address": "822 11th Ave",
+      "city": "Moline",
+      "state": "IL",
+      "zip": "61265",
+      "phone": "309-764-8590",
+      "hours": "Wed-Sat 9AM-4PM",
+      "websites": [
+        "https://www.richs.cc"
+      ],
+      "description": "Collections include prehistoric and historic Native American artifacts from the Quad Cities region.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 20,
+      "name": "Geneseo Historical Association",
+      "address": "205 S State St",
+      "city": "Geneseo",
+      "state": "IL",
+      "zip": "61254",
+      "phone": "309-944-3043",
+      "hours": "By appointment; Jun-Aug Sat 2-4PM",
+      "websites": [
+        "https://geneseohistoricalmuseum.com"
+      ],
+      "description": "The large Italianate home, originally constructed in 1855, has displays including local American Indian artifacts.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 21,
+      "name": "Bishop Hill State Historic Site",
+      "address": "Bishop Hill, IL",
+      "city": "Bishop Hill",
+      "state": "IL",
+      "zip": "61419",
+      "phone": "309-927-3345",
+      "hours": "Wed-Sun 9AM-5PM",
+      "websites": [
+        "https://bishophill.com"
+      ],
+      "description": "This historic Swedish colony site includes archaeological interpretation and exhibits on nineteenth-century communal life.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 22,
+      "name": "Henry County Historical Society Museum",
+      "address": "202 S Park St",
+      "city": "Bishop Hill",
+      "state": "IL",
+      "zip": "61419",
+      "phone": "309-927-3528",
+      "hours": "May-Oct 10AM-4PM",
+      "websites": [
+        "https://bishophill.com"
+      ],
+      "description": "Museum displays include an exhibit with stone tools illustrating the prehistory of Henry County.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 23,
+      "name": "Kewanee Historical Society",
+      "address": "211 N Chestnut St",
+      "city": "Kewanee",
+      "state": "IL",
+      "zip": "61443",
+      "phone": "309-854-9701",
+      "hours": "May-Oct Thu & Sat 1:30PM-4PM; Labor Day weekend 9AM-5PM",
+      "websites": [
+        "https://kewaneehistory.com"
+      ],
+      "description": "Three floors of local history exhibits include prehistoric stone tools donated by local collectors.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 24,
+      "name": "Bureau County Museum",
+      "address": "109 Park Ave W",
+      "city": "Princeton",
+      "state": "IL",
+      "zip": "61356",
+      "phone": "815-875-2184",
+      "hours": "Mar-Nov Wed-Sat 1PM-5PM",
+      "websites": [
+        "https://bureaucountymuseum.com"
+      ],
+      "description": "The museum includes Native American artifacts alongside collections on Bureau County history.",
+      "notes": "",
+      "type": "museum"
+    }
+  ]
+}

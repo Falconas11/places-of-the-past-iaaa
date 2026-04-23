@@ -1,0 +1,197 @@
+{
+  "region": "Southern Illinois",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Carlyle Lake Visitor Center",
+      "address": "801 Lake Rd",
+      "city": "Carlyle",
+      "state": "IL",
+      "zip": "62231",
+      "phone": "618-594-5253",
+      "hours": "Apr-May & Sep: Sat-Sun 10AM-6PM; Summer: Daily 10AM-6PM",
+      "websites": [
+        "https://www.mvs.usace.army.mil"
+      ],
+      "description": "Visitor center with exhibits on natural history and archaeology.",
+      "notes": "",
+      "type": "visitor center"
+    },
+    {
+      "number": 2,
+      "name": "General John A. Logan Museum",
+      "address": "1613 Edith St",
+      "city": "Murphysboro",
+      "state": "IL",
+      "zip": "62966",
+      "phone": "618-684-5455",
+      "hours": "Jun-Aug: Tu-Sa 10AM-4PM; Sep-May: Tu-Su 1-4PM",
+      "websites": [
+        "https://loganmuseum.org"
+      ],
+      "description": "Museum featuring archaeological collections from southern Illinois.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 3,
+      "name": "Giant City State Park",
+      "address": "235 Giant City Rd",
+      "city": "Makanda",
+      "state": "IL",
+      "zip": "62958",
+      "phone": "618-457-4836",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov"
+      ],
+      "description": "State park with Late Woodland archaeological features.",
+      "notes": "Grounds open daily; visitor center hours vary",
+      "type": "state park"
+    },
+    {
+      "number": 4,
+      "name": "The Pounds Site",
+      "address": "Approximate location; see official site",
+      "city": "Ozark",
+      "state": "IL",
+      "zip": "62972",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Archaeological mound complex located along the Rim Rock National Recreation Trail, representing Late Woodland occupation in southern Illinois.",
+      "notes": "Outdoor archaeological site; no formal address",
+      "type": "archaeological site"
+    },
+    {
+      "number": 5,
+      "name": "Kaolin Pond",
+      "address": "Approximate location; see official site",
+      "city": "Cobden",
+      "state": "IL",
+      "zip": "62920",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Archaeological site associated with a 19th-century kaolin clay mining village, with remnants of early industrial and settlement activity.",
+      "notes": "Outdoor site; limited public information",
+      "type": "archaeological site"
+    },
+    {
+      "number": 6,
+      "name": "Union County Museum",
+      "address": "117 N Appleknocker Dr",
+      "city": "Cobden",
+      "state": "IL",
+      "zip": "62920",
+      "phone": "618-893-2865",
+      "hours": "Hours vary; confirm before visiting",
+      "websites": [
+        "https://unioncountymuseum.com"
+      ],
+      "description": "Local history museum with exhibits including prehistoric and historic Native American artifacts from Union County.",
+      "notes": "Hours not consistently published",
+      "type": "museum"
+    },
+    {
+      "number": 7,
+      "name": "Millstone Bluff Archaeological Area",
+      "address": "Approximate location; see official site",
+      "city": "Ozark",
+      "state": "IL",
+      "zip": "62972",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.fs.usda.gov"
+      ],
+      "description": "Mississippian hilltop village site in the Shawnee National Forest with preserved house outlines, plaza, and defensive features.",
+      "notes": "Outdoor site within national forest",
+      "type": "archaeological site"
+    },
+    {
+      "number": 8,
+      "name": "Illinois Iron Furnace",
+      "address": "Approximate location; see official site",
+      "city": "Elizabethtown",
+      "state": "IL",
+      "zip": "62931",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.fs.usda.gov"
+      ],
+      "description": "Historic iron furnace site dating to the 19th century, preserving industrial archaeological remains within the Shawnee National Forest.",
+      "notes": "Outdoor historic site",
+      "type": "historic site"
+    },
+    {
+      "number": 9,
+      "name": "Thebes Court House",
+      "address": "Oak and 5th St",
+      "city": "Thebes",
+      "state": "IL",
+      "zip": "62990",
+      "phone": "618-776-2658",
+      "hours": "Tours by appointment",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Historic courthouse overlooking the Mississippi River.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 10,
+      "name": "Fort Massac State Park",
+      "address": "1308 E 5th St",
+      "city": "Metropolis",
+      "state": "IL",
+      "zip": "62960",
+      "phone": "618-524-4712",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov"
+      ],
+      "description": "Historic fort site with archaeological excavations.",
+      "notes": "Grounds open daily",
+      "type": "state park"
+    },
+    {
+      "number": 11,
+      "name": "Kincaid Mounds State Historic Site",
+      "address": "Approximate location; see official site",
+      "city": "Brookport",
+      "state": "IL",
+      "zip": "62910",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov"
+      ],
+      "description": "Major Mississippian mound center with extensive village remains, one of the largest prehistoric archaeological sites in southern Illinois.",
+      "notes": "No visitor center; limited access",
+      "type": "archaeological site"
+    },
+    {
+      "number": 12,
+      "name": "Customs House Museum",
+      "address": "1400 Washington Ave",
+      "city": "Cairo",
+      "state": "IL",
+      "zip": "62914",
+      "phone": "618-734-9632",
+      "hours": "Tu-Th 10AM-noon, 1-3PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Historic customs house building containing exhibits including Native American artifacts and regional historical materials.",
+      "notes": "",
+      "type": "museum"
+    }
+  ]
+}

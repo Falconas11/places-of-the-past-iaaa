@@ -1,0 +1,133 @@
+{
+  "region": "Wabash River",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Ballard Nature Center",
+      "address": "5253 E US Highway 40",
+      "city": "Altamont",
+      "state": "IL",
+      "zip": "62411",
+      "phone": "618-483-6856",
+      "hours": "Tue-Fri 8AM-4PM; Sat 12-4PM; Summer also Mon & Sun",
+      "websites": [
+        "https://www.ballardnaturecenter.org"
+      ],
+      "description": "The center includes interpretive exhibits and collections of Native American artifacts from the Wabash River region alongside natural history displays.",
+      "notes": "",
+      "type": "nature center"
+    },
+    {
+      "number": 2,
+      "name": "Teutopolis Monastery Museum",
+      "address": "110 S Garrett St",
+      "city": "Teutopolis",
+      "state": "IL",
+      "zip": "62467",
+      "phone": "217-857-3586",
+      "hours": "Apr-Nov: First Sunday 12:30-4PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Museum exhibits in the Franciscan monastery include regional Native American artifacts together with materials on early Catholic settlement in the area.",
+      "notes": "Limited public hours",
+      "type": "museum"
+    },
+    {
+      "number": 3,
+      "name": "Hutsonville Memorial Village Museum",
+      "address": "Outer S Rose St",
+      "city": "Hutsonville",
+      "state": "IL",
+      "zip": "62433",
+      "phone": "618-546-1557",
+      "hours": "Jun-Sep: Sun 2-4PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Open-air village museum preserving historic structures with displays that include locally recovered Native American artifacts from the Wabash Valley.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 4,
+      "name": "Newton Public Library District",
+      "address": "100 S Van Buren St",
+      "city": "Newton",
+      "state": "IL",
+      "zip": "62448",
+      "phone": "618-783-8141",
+      "hours": "Hours vary; confirm before visiting",
+      "websites": [
+        "https://www.newtonpl.org"
+      ],
+      "description": "Public library facility with a small display of Native American artifacts representing local archaeological finds.",
+      "notes": "Library hours vary; not archaeology-focused facility",
+      "type": "library"
+    },
+    {
+      "number": 5,
+      "name": "Crawford County Historical Museum",
+      "address": "408 S Cross St",
+      "city": "Robinson",
+      "state": "IL",
+      "zip": "62454",
+      "phone": "618-544-3087",
+      "hours": "Sat-Sun 2-4PM & by appointment",
+      "websites": [
+        "Not available"
+      ],
+      "description": "County museum featuring collections from the Wabash River valley, including prehistoric Native American artifacts and materials from early settlement.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 6,
+      "name": "Fife Opera House",
+      "address": "123 S Main St",
+      "city": "Palestine",
+      "state": "IL",
+      "zip": "62451",
+      "phone": "618-586-9418",
+      "hours": "By appointment / events",
+      "websites": [
+        "https://www.fifeoperahouse.org"
+      ],
+      "description": "Historic opera house building used for events, with limited displays of local artifacts reflecting regional history.",
+      "notes": "Not a full-time museum",
+      "type": "historic site"
+    },
+    {
+      "number": 7,
+      "name": "Olney Carnegie Building Museum",
+      "address": "401 E Main St",
+      "city": "Olney",
+      "state": "IL",
+      "zip": "62450",
+      "phone": "618-395-1963",
+      "hours": "Apr-Nov: Sun 1-4PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Museum housed in a historic Carnegie building with exhibits that include Native American artifacts from the Olney area.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 8,
+      "name": "White County Historical Society Museum",
+      "address": "219 E Main St",
+      "city": "Carmi",
+      "state": "IL",
+      "zip": "62821",
+      "phone": "618-382-8425",
+      "hours": "By appointment",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Local history museum preserving artifacts from White County, including Native American materials from sites in the surrounding region.",
+      "notes": "Original name included parenthetical text",
+      "type": "museum"
+    }
+  ]
+}

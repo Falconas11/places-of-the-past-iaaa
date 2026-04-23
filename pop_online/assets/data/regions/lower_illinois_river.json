@@ -1,0 +1,165 @@
+{
+  "region": "Lower Illinois River",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Indian Mounds Park",
+      "address": "5th St & Harrison St",
+      "city": "Quincy",
+      "state": "IL",
+      "zip": "62301",
+      "phone": "217-222-7703",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.quincyparkdistrict.com/facilities/indian-mounds-park"
+      ],
+      "description": "This bluff-top park preserves Woodland period burial mounds overlooking the Mississippi River.",
+      "notes": "Outdoor archaeological park with no staffed visitor facility.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 2,
+      "name": "Quincy Museum",
+      "address": "1601 Maine St",
+      "city": "Quincy",
+      "state": "IL",
+      "zip": "62301",
+      "phone": "217-224-7669",
+      "hours": "Tue-Sun 1-5PM",
+      "websites": [
+        "https://www.thequincymuseum.org"
+      ],
+      "description": "Exhibits include Native American artifacts from western Illinois.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 3,
+      "name": "Old Lincoln Courtroom & Museum",
+      "address": "101 W 3rd St",
+      "city": "Beardstown",
+      "state": "IL",
+      "zip": "62618",
+      "phone": "217-323-4514",
+      "hours": "Apr-Nov Mon-Sat 10AM-4PM",
+      "websites": [
+        "https://www.lincolncourtroom.org"
+      ],
+      "description": "This restored courtroom includes exhibits on local history and Abraham Lincoln’s legal career.",
+      "notes": "",
+      "type": "historic site"
+    },
+    {
+      "number": 4,
+      "name": "New Philadelphia Town Site",
+      "address": "Approximate site near Barry, IL",
+      "city": "Barry",
+      "state": "IL",
+      "zip": "62312",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.nps.gov/neph"
+      ],
+      "description": "Archaeological investigations have documented the layout and lifeways of New Philadelphia, the first town in the United States founded and platted by an African American.",
+      "notes": "Open archaeological landscape with no central visitor facility.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 5,
+      "name": "Ray Norbut State Fish & Wildlife Area",
+      "address": "46816 290th Ave",
+      "city": "Griggsville",
+      "state": "IL",
+      "zip": "62340",
+      "phone": "217-833-2811",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov/parks/park.raynorbut.html"
+      ],
+      "description": "This large state area includes land along the Illinois River that has been the focus of archaeological research on Native American use of riverine environments.",
+      "notes": "Primarily a natural resource area with limited interpretive infrastructure.",
+      "type": "state park"
+    },
+    {
+      "number": 6,
+      "name": "Pike County Historical Society Museum",
+      "address": "400 E Jefferson St",
+      "city": "Pittsfield",
+      "state": "IL",
+      "zip": "62363",
+      "phone": "217-285-4618",
+      "hours": "Wed-Sat 10AM-2PM",
+      "websites": [
+        "Not available"
+      ],
+      "description": "Collections include artifacts from Native American occupations and early Euro-American settlement in Pike County.",
+      "notes": "Limited online presence; verify details locally.",
+      "type": "museum"
+    },
+    {
+      "number": 7,
+      "name": "Center for American Archeology Museum and Visitor Center",
+      "address": "1020 IL-100",
+      "city": "Kampsville",
+      "state": "IL",
+      "zip": "62053",
+      "phone": "618-653-4316",
+      "hours": "Apr-Oct Tue-Fri 10AM-5PM; Sat 10AM-4PM; Sun 12-4PM",
+      "websites": [
+        "https://www.caa-archeology.org"
+      ],
+      "description": "Exhibits interpret the archaeology of the Illinois River valley and ongoing archaeological investigations.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 8,
+      "name": "Two Rivers National Wildlife Refuge",
+      "address": "Hagen Rd",
+      "city": "Brussels",
+      "state": "IL",
+      "zip": "62013",
+      "phone": "618-883-2524",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://www.fws.gov/refuge/two-rivers"
+      ],
+      "description": "The refuge protects floodplain habitats at the confluence of the Illinois and Mississippi rivers, an area long used by Native American groups.",
+      "notes": "Visitor center hours vary seasonally.",
+      "type": "natural area"
+    },
+    {
+      "number": 9,
+      "name": "Principia School of Nations Museum",
+      "address": "Principia College",
+      "city": "Elsah",
+      "state": "IL",
+      "zip": "62028",
+      "phone": "618-374-5236",
+      "hours": "By appointment; limited public access",
+      "websites": [
+        "https://www.principia.edu"
+      ],
+      "description": "The museum contains collections of American Indian cultural materials used for educational purposes within the school curriculum.",
+      "notes": "",
+      "type": "museum"
+    },
+    {
+      "number": 10,
+      "name": "Village of Elsah Museum",
+      "address": "26 LaSalle St",
+      "city": "Elsah",
+      "state": "IL",
+      "zip": "62028",
+      "phone": "618-374-1568",
+      "hours": "Apr-Oct Sat-Sun 1-4PM",
+      "websites": [
+        "https://www.elsah.org"
+      ],
+      "description": "The museum preserves the history of Elsah and surrounding communities.",
+      "notes": "",
+      "type": "museum"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "dataset": "Illinois Antiquity & Places of the Past (sites list)",
+    "year": 2014,
+    "generated_at": "2026-01-27T05:01:16Z",
+    "notes": "Structured from guidebook pages; fields may include seasonal hours and may change."
+  },
+  "regions": [
+    {
+      "region": "Northwest Illinois",
+      "file": "assets/data/regions/northwest_illinois.json"
+    },
+    {
+      "region": "Northeast Illinois",
+      "file": "assets/data/regions/northeast_illinois.json"
+    },
+    {
+      "region": "West Central Illinois",
+      "file": "assets/data/regions/west_central_illinois.json"
+    },
+    {
+      "region": "Lower Illinois River",
+      "file": "assets/data/regions/lower_illinois_river.json"
+    },
+    {
+      "region": "Central Illinois",
+      "file": "assets/data/regions/central_illinois.json"
+    },
+    {
+      "region": "American Bottom",
+      "file": "assets/data/regions/american_bottom.json"
+    },
+    {
+      "region": "Wabash River",
+      "file": "assets/data/regions/wabash_river.json"
+    },
+    {
+      "region": "Southern Illinois",
+      "file": "assets/data/regions/southern_illinois.json"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "region": "American Bottom",
+  "sites": [
+    {
+      "number": 1,
+      "name": "Piasa Bird Memorial",
+      "address": "900 W Broadway",
+      "city": "Alton",
+      "state": "IL",
+      "zip": "62002",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://downtownalton.com/directory/listing/piasa-bird/"
+      ],
+      "description": "In 1673, Marquette and Jolliet observed two monsters painted on the limestone bluffs overlooking the Mississippi River; the current image is reconstructed from more recent lore.",
+      "notes": "Current painted pictograph is at Piasa Park, less than a mile north of downtown Alton on Illinois Route 100; outdoor site with no visitor center.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 2,
+      "name": "Lewis and Clark State Historic Site",
+      "address": "1 Lewis and Clark Trail",
+      "city": "Hartford",
+      "state": "IL",
+      "zip": "62048",
+      "phone": "618-251-5811",
+      "hours": "Interpretive Center: Wed-Sun 9AM-5PM; Store of Discovery: Wed, Thu, Sat, Sun 10AM-2PM; closed Fri",
+      "websites": [
+        "https://www.campdubois.com",
+        "https://dnrhistoric.illinois.gov/experience/sites/southwest/lewis-and-clark.html"
+      ],
+      "description": "Lewis and Clark established a winter camp in December 1803 near Hartford prior to starting their more than two-year journey of western exploration of the Louisiana Territory; gallery exhibits include a 55-foot full-scale replica of their keelboat.",
+      "notes": "",
+      "type": "state historic site"
+    },
+    {
+      "number": 3,
+      "name": "South Roxana Mounds",
+      "address": "Dad’s Club Park, Daniel Boone Trail and Smith Ave",
+      "city": "South Roxana",
+      "state": "IL",
+      "zip": "62087",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://southroxana.org/parks/"
+      ],
+      "description": "Two mounds that may date to the Middle to Late Woodland period are visible within the park.",
+      "notes": "Memo identifies the mound location as Dad’s Club Park at Daniel Boone Trail and Smith Avenue.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 4,
+      "name": "Madison County Historical Museum",
+      "address": "801 N Main St",
+      "city": "Edwardsville",
+      "state": "IL",
+      "zip": "62025",
+      "phone": "618-656-7569",
+      "hours": "Museum: Wed-Fri 12PM-4PM; Sun 1PM-4PM; Library/Research: Mon-Fri 9AM-4PM",
+      "websites": [
+        "https://madcohistory.org",
+        "https://www.madisoncountyil.gov/departments/county_historical_museum/index.php"
+      ],
+      "description": "Exhibits in a restored 1836 home include Native American and pioneer artifacts.",
+      "notes": "Memo notes new exhibits are being designed and developed in the historic house; confirm exhibit availability before visiting.",
+      "type": "museum"
+    },
+    {
+      "number": 5,
+      "name": "Horseshoe Lake State Park",
+      "address": "3321 Highway 111",
+      "city": "Granite City",
+      "state": "IL",
+      "zip": "62040",
+      "phone": "618-931-0270",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov/parks/park.horseshoelakemadison.html"
+      ],
+      "description": "The nearly 3,000-acre park area was inhabited by Native Americans as early as 10,000 years ago and includes the Horseshoe Lake platform mound dating to the Mississippian period (AD 1000-1200).",
+      "notes": "Memo recommends revising the guide text to note that a Mississippian platform mound is located within the park, though it is now heavily overgrown.",
+      "type": "state park"
+    },
+    {
+      "number": 6,
+      "name": "Cahokia Courthouse State Historic Site",
+      "address": "107 Elm St",
+      "city": "Cahokia",
+      "state": "IL",
+      "zip": "62206",
+      "phone": "618-332-1782",
+      "hours": "Thu-Sat 9AM-4PM",
+      "websites": [
+        "https://dnrhistoric.illinois.gov/experience/sites/southwest/cahokia-courthouse.html"
+      ],
+      "description": "Originally constructed by the French about 1740, the Cahokia Courthouse served as the center of political activity in the Northwest Territory in the late 18th century; WPA excavations in the 1930s are included in the courthouse exhibits.",
+      "notes": "Municipality naming may need confirmation because Cahokia and nearby municipalities were later merged as Cahokia Heights.",
+      "type": "historic site"
+    },
+    {
+      "number": 7,
+      "name": "Cahokia Mounds State Historic Site & Interpretive Center",
+      "address": "30 Ramey St",
+      "city": "Collinsville",
+      "state": "IL",
+      "zip": "62234",
+      "phone": "618-346-5160",
+      "hours": "Grounds: dawn-dusk; Interpretive Center: hours vary / confirm before visiting",
+      "websites": [
+        "https://cahokiamounds.org"
+      ],
+      "description": "A UNESCO World Heritage Site, Cahokia Mounds State Historic Site preserves 2,200 acres of the largest pre-contact American Indian community north of Mexico; the original site covered nearly 6 square miles, included 120 mounds, and at its peak around AD 1050-1150 had a population of 10,000 to 20,000 people of the Mississippian culture.",
+      "notes": "Contact sheet lists the grounds as open dawn to dusk and the Interpretive Center schedule as pending or variable.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 8,
+      "name": "Emerald Mound",
+      "address": "Emerald Mound Road via IL Route 4",
+      "city": "Lebanon",
+      "state": "IL",
+      "zip": "62254",
+      "phone": "Not publicly listed",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://cahokiamounds.org"
+      ],
+      "description": "Owned by the State of Illinois, the largest of the three remaining Mississippian mounds in this group is a large flat-topped pyramid about 20 feet high.",
+      "notes": "From Lebanon, take IL Route 4 north to Emerald Mound Road and turn east; the mound is to the south, with a driving loop available via Emerald Mound Grange Road and Midgley-Neiss Road.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 9,
+      "name": "Fort de Chartres State Historic Site",
+      "address": "1350 IL Route 155",
+      "city": "Prairie du Rocher",
+      "state": "IL",
+      "zip": "62277",
+      "phone": "618-284-7230",
+      "hours": "Grounds: sunrise-sunset daily; Museum/display buildings: Tue-Sun 9AM-4:30PM, closed holidays, staffing dependent",
+      "websites": [
+        "https://dnrhistoric.illinois.gov/experience/sites/southwest/fort-de-chartres.html",
+        "https://fortdechartres.us"
+      ],
+      "description": "Visitors to the museum in the king’s storehouse at Fort de Chartres can see many eighteenth-century archaeological artifacts relating to the French occupation of Randolph County.",
+      "notes": "",
+      "type": "state historic site"
+    },
+    {
+      "number": 10,
+      "name": "Modoc Rock Shelter",
+      "address": "County Route 7, 2 mi SE of Prairie du Rocher",
+      "city": "Prairie du Rocher",
+      "state": "IL",
+      "zip": "62277",
+      "phone": "Not publicly listed",
+      "hours": "Not publicly listed",
+      "websites": [
+        "https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm"
+      ],
+      "description": "Listed on the National Register of Historic Places and a National Historic Landmark, the sandstone bluff at Modoc Rock Shelter provided shelter for Native American groups beginning shortly after the Ice Age and continuing for almost 8,000 years.",
+      "notes": "Archaeological landmark site; public interpretation is limited and visit logistics are not clearly published.",
+      "type": "archaeological site"
+    },
+    {
+      "number": 11,
+      "name": "Fort Kaskaskia State Historic Site",
+      "address": "4372 Park Rd",
+      "city": "Ellis Grove",
+      "state": "IL",
+      "zip": "62241",
+      "phone": "618-859-3741",
+      "hours": "Grounds: 7AM-10PM year-round; Guided tours: Mon-Fri 8AM-3:30PM by contacting the site",
+      "websites": [
+        "https://dnrhistoric.illinois.gov/experience/sites/southwest/fort-kaskaskia.html"
+      ],
+      "description": "The 200-acre bluff-top park includes the remnants of a French earthen-work and timber fortification constructed in the mid-1700s.",
+      "notes": "",
+      "type": "state historic site"
+    },
+    {
+      "number": 12,
+      "name": "Randolph County Museum",
+      "address": "1 Taylor St",
+      "city": "Chester",
+      "state": "IL",
+      "zip": "62233",
+      "phone": "618-826-2667",
+      "hours": "Sun, Mon, Thu, Fri 12:30PM-3:30PM",
+      "websites": [
+        "https://www.greatriverroad-illinois.org/Randolph-County-Museum"
+      ],
+      "description": "Exhibits include Native American artifacts.",
+      "notes": "Earlier working file used a different phone number; this version restores the guidebook contact.",
+      "type": "museum"
+    },
+    {
+      "number": 13,
+      "name": "Piney Creek Ravine State Natural Area",
+      "address": "2280 Piney Creek Rd",
+      "city": "Campbell Hill",
+      "state": "IL",
+      "zip": "62916",
+      "phone": "618-826-2706",
+      "hours": "Daily sunrise-sunset",
+      "websites": [
+        "https://dnr.illinois.gov",
+        "https://www.nps.gov/subjects/rockart/piney-creek-ravine.htm"
+      ],
+      "description": "Piney Creek Ravine contains the largest body of prehistoric rock art in Illinois, with almost 200 designs believed to date to the Late Woodland (AD 500-1000) and Mississippian (AD 1000-1550) periods.",
+      "notes": "Current contact sheet uses the Campbell Hill address; the 2014 guide listed a Chester care-of address and county-line directions.",
+      "type": "archaeological site"
+    }
+  ]
+}

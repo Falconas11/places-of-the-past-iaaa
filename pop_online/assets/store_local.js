@@ -1,5 +1,5 @@
 // assets/store_local.js
-const MANIFEST_URL = "assets/data/regions/regions_manifest.json";
+const MANIFEST_URL = new URL("./data/regions/regions_manifest.json", import.meta.url);
 
 let _manifest = null;
 const _regionCache = new Map();

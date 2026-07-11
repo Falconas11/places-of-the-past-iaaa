@@ -3,6 +3,7 @@
 import { store } from "./store_local.js"; //from local to api
 // import { store } from "./store_api.js"; //from local to api
 
+const READ_ONLY_MODE = true;
 function $(id) { return document.getElementById(id); }
 
 function getQueryParam(name) {
@@ -34,6 +35,9 @@ function normalizeUrl(u) {
 }
 // ------------------- index.html -------------------
 async function initIndexPage() {
+  if (READ_ONLY_MODE) {
+    $("btnReset")?.classList.add("hidden");
+  }
   const wrap = $("mapWrap");
   if (wrap) {
     // SVG map
@@ -144,6 +148,13 @@ function showDetail(site) {
     </div>
   `;
 
+  if (READ_ONLY_MODE) {
+    $("btnEdit")?.classList.add("hidden");
+    $("btnDelete")?.classList.add("hidden");
+  } else {
+    $("btnEdit")?.classList.remove("hidden");
+    $("btnDelete")?.classList.remove("hidden");
+  }
   $("btnEdit").onclick = () => openEditor("edit", site);
   $("btnDelete").onclick = async () => {
     if (!confirm(`Confirm deleting #${site.number}?`)) return;
@@ -308,6 +319,13 @@ function applyFilterSort() {
 }
 
 async function initRegionPage() {
+  if (READ_ONLY_MODE) {
+    $("btnAdd")?.classList.add("hidden");
+    $("btnExport")?.classList.add("hidden");
+
+    const importLabel = $("importFile")?.closest("label");
+    importLabel?.classList.add("hidden");
+  }
   const r = getQueryParam("region");
   if (!r) {
     alert("Region parameters missing, back to main page");

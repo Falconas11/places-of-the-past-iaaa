@@ -99,22 +99,6 @@
     },
     {
       "number": 7,
-      "name": "Burpee Museum of Natural History",
-      "address": "737 N Main St",
-      "city": "Rockford",
-      "state": "IL",
-      "zip": "61103",
-      "phone": "815-965-3433",
-      "hours": "Daily 10AM-5PM; Fri-Sat until 8PM",
-      "websites": [
-        "https://burpee.org"
-      ],
-      "description": "Exhibits include a timeline display, \u201cThe First People,\u201d with Native American artifacts from the Illinois\u2013Wisconsin state line region.",
-      "notes": "",
-      "type": "museum"
-    },
-    {
-      "number": 8,
       "name": "Beattie Mound Group",
       "address": "N Main St & Park Ave",
       "city": "Rockford",
@@ -130,7 +114,7 @@
       "type": "archaeological site"
     },
     {
-      "number": 9,
+      "number": 8,
       "name": "Thomson Mound",
       "address": "Lewis Ave",
       "city": "Thomson",
@@ -146,7 +130,7 @@
       "type": "archaeological site"
     },
     {
-      "number": 10,
+      "number": 9,
       "name": "Jarrett Prairie Center",
       "address": "7993 N River Rd",
       "city": "Byron",
@@ -162,7 +146,7 @@
       "type": "nature center"
     },
     {
-      "number": 11,
+      "number": 10,
       "name": "Albany Mounds State Historic Site",
       "address": "S Cherry St",
       "city": "Albany",
@@ -178,7 +162,7 @@
       "type": "archaeological site"
     },
     {
-      "number": 12,
+      "number": 11,
       "name": "Sinnissippi Park",
       "address": "IL-2",
       "city": "Sterling",
@@ -194,7 +178,7 @@
       "type": "archaeological site"
     },
     {
-      "number": 13,
+      "number": 12,
       "name": "John Deere Historic Site",
       "address": "8334 S Clinton St",
       "city": "Dixon",
@@ -210,7 +194,7 @@
       "type": "historic site"
     },
     {
-      "number": 14,
+      "number": 13,
       "name": "Loveland Community House Museum",
       "address": "513 W Second St",
       "city": "Dixon",
@@ -226,7 +210,7 @@
       "type": "museum"
     },
     {
-      "number": 15,
+      "number": 14,
       "name": "Northwest Territory Historic Center",
       "address": "205 W Fifth St",
       "city": "Dixon",
@@ -242,7 +226,7 @@
       "type": "museum"
     },
     {
-      "number": 16,
+      "number": 15,
       "name": "Rock Island Arsenal Museum",
       "address": "Building 60, Rock Island Arsenal",
       "city": "Rock Island",
@@ -258,7 +242,7 @@
       "type": "museum"
     },
     {
-      "number": 17,
+      "number": 16,
       "name": "Colonel Davenport Home",
       "address": "North Shore of Arsenal Island",
       "city": "Rock Island",
@@ -274,7 +258,7 @@
       "type": "historic site"
     },
     {
-      "number": 18,
+      "number": 17,
       "name": "Black Hawk State Historic Site Hauberg Indian Museum",
       "address": "1510 46th Ave",
       "city": "Rock Island",
@@ -290,7 +274,7 @@
       "type": "museum"
     },
     {
-      "number": 19,
+      "number": 18,
       "name": "Rock Island County Historical Society Museum",
       "address": "822 11th Ave",
       "city": "Moline",
@@ -306,7 +290,7 @@
       "type": "museum"
     },
     {
-      "number": 20,
+      "number": 19,
       "name": "Geneseo Historical Association",
       "address": "205 S State St",
       "city": "Geneseo",
@@ -322,7 +306,7 @@
       "type": "museum"
     },
     {
-      "number": 21,
+      "number": 20,
       "name": "Bishop Hill State Historic Site",
       "address": "Bishop Hill, IL",
       "city": "Bishop Hill",
@@ -338,7 +322,7 @@
       "type": "historic site"
     },
     {
-      "number": 22,
+      "number": 21,
       "name": "Henry County Historical Society Museum",
       "address": "202 S Park St",
       "city": "Bishop Hill",
@@ -354,7 +338,7 @@
       "type": "museum"
     },
     {
-      "number": 23,
+      "number": 22,
       "name": "Kewanee Historical Society",
       "address": "211 N Chestnut St",
       "city": "Kewanee",
@@ -370,7 +354,7 @@
       "type": "museum"
     },
     {
-      "number": 24,
+      "number": 23,
       "name": "Bureau County Museum",
       "address": "109 Park Ave W",
       "city": "Princeton",

@@ -67,19 +67,19 @@
     },
     {
       "number": 5,
-      "name": "Garfield Farm Inn & Museum",
-      "address": "3N016 Garfield Rd.",
-      "city": "LaFox",
-      "state": "IL",
-      "zip": "60147",
-      "phone": "630-584-8485",
-      "hours": "Jun-Sep Wed & Sun 1-4PM",
-      "websites": [
-        "https://garfieldfarm.org"
-      ],
-      "description": "The museum includes original 1840s buildings, period events, and educational programs; selected artifacts from on-site excavations are displayed.",
-      "notes": "",
-      "type": "museum"
+        "name": "Pullman National Historical Park",
+  "address": "610 E 111th St",
+  "city": "Chicago",
+  "state": "IL",
+  "zip": "60628",
+  "phone": "",
+  "hours": "",
+  "websites": [
+    "https://www.nps.gov/pull/planyourvisit/basicinfo.htm"
+  ],
+  "description": "Historic archaeology exhibits include artifacts recovered from the site and buildings identified through archaeological excavations.",
+  "notes": "",
+  "type": "historic site"
     },
     {
       "number": 6,
@@ -481,6 +481,121 @@
       "description": "The cemetery includes a mass grave of Confederate prisoners of war containing more than 4,000 burials.",
       "notes": "",
       "type": "historic site"
-    }
+    },
+
+    {
+      "number": 31,
+  "name": "Sand Ridge Nature Center",
+  "address": "15891 Paxton Ave",
+  "city": "South Holland",
+  "state": "IL",
+  "zip": "60473",
+  "phone": "",
+  "hours": "",
+  "websites": [
+    "https://fpdcc.com/places/locations/sand-ridge-nature-center/#location"
+  ],
+  "description": "Interactive exhibits explain the dune-and-swale landscape and thousands of years of Native American history. Outdoor interpretive signs describe prehistoric settlement, transportation routes, and archaeological discoveries.",
+  "notes": "Includes interpretive signage such as the attached Thorn Creek Area panel.",
+  "type": "nature center"
+},
+
+{
+  "number": 32,
+  "name": "River Trail Nature Center",
+  "address": "3120 Milwaukee Ave",
+  "city": "Northbrook",
+  "state": "IL",
+  "zip": "60062",
+  "phone": "",
+  "hours": "",
+  "websites": [
+    "https://fpdcc.com/places/locations/river-trail-nature-center/"
+  ],
+  "description": "Free exhibits include Native American artifacts. Nature trails interpret landscapes formed by the Des Plaines River.",
+  "notes": "",
+  "type": "nature center"
+},
+{ 
+  "number": 33,
+  "name": "Dunn Museum",
+  "address": "1899 W Winchester Rd",
+  "city": "Libertyville",
+  "state": "IL",
+  "zip": "",
+  "phone": "",
+  "hours": "",
+  "websites": [
+    "https://www.lcfpd.org/museum/plan-your-visit/"
+  ],
+  "description": "Permanent exhibition 'The First People' presents 12,000 years of Native American history in Lake County through archaeology and continuing Indigenous traditions.",
+  "notes": "",
+  "type": "museum"
+},
+{
+  "number": 34,
+  "name": "Pokto Cinto (Serpent Twin)",
+  "address": "W Irving Park Rd, east of Des Plaines River Rd",
+  "city": "Schiller Park",
+  "state": "IL",
+  "zip": "60634",
+  "phone": "",
+  "hours": "Open when the park is open",
+  "websites": [
+    "https://chicagopublicartgroup.org/project/pokto-cinto-serpent-twin/"
+  ],
+  "description": "Earthwork effigy mound forming part of the 4000N interpretive trail celebrating Native American heritage, archaeology, and environmental stewardship.",
+  "notes": "",
+  "type": "archaeological site"
+},
+{ 
+  "number": 35,
+  "name": "Oak Forest Heritage Preserve",
+  "address": "159th St east of S Cicero Ave",
+  "city": "Oak Forest",
+  "state": "IL",
+  "zip": "",
+  "phone": "",
+  "hours": "Daily sunrise-sunset",
+  "websites": [
+    "https://fpdcc.com/places/locations/oak-forest-heritage-preserve/"
+  ],
+  "description": "Interpretive trail describing archaeological investigations of a Native American village and the historic Cook County Poor Farm cemetery.",
+  "notes": "",
+  "type": "park"
+},
+{
+  "number": 36,
+  "name": "Norwood Park Historical Society",
+  "address": "5624 N Newark Ave",
+  "city": "Chicago",
+  "state": "IL",
+  "zip": "60631",
+  "phone": "",
+  "hours": "Saturday afternoons",
+  "websites": [
+    "https://norwoodparkhistoricalsociety.org/about-us/"
+  ],
+  "description": "Museum exhibit 'Can You Dig It' displays artifacts excavated from the Noble-Seymour-Crippen House grounds, illustrating local historical archaeology.",
+  "notes": "",
+  "type": "museum"
+},
+
+{ 
+  "number": 37,
+  "name": "The Grove (Kennicott Grove)",
+  "address": "1421 Milwaukee Ave",
+  "city": "Glenview",
+  "state": "IL",
+  "zip": "60025",
+  "phone": "",
+  "hours": "",
+  "websites": [
+    "https://glenviewparks.org/facilities/the-grove/"
+  ],
+  "description": "Nature preserve with interpretive trails describing Native American occupation of the area and archaeological discoveries through educational signage.",
+  "notes": "Recommended by Sara as an addition to Places of the Past.",
+  "type": "nature preserve"
+}
   ]
 }

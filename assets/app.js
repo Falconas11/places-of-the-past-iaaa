@@ -270,7 +270,7 @@ async function reloadRegion() {
   // ascending number
   currentSites.sort((a,b) => Number(a.number) - Number(b.number));
   applyFilterSort();
-  $("regionMeta").textContent = `共 ${currentSites.length} 个 sites`;
+  $("regionMeta").textContent = ` ${currentSites.length} sites`;
 }
 
 function applyFilterSort() {

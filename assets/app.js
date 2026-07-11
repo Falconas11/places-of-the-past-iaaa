@@ -1,5 +1,7 @@
 // assets/app.js
-import { store } from "./store_api.js"; //from local to api
+
+import { store } from "./store_local.js"; //from local to api
+// import { store } from "./store_api.js"; //from local to api
 
 function $(id) { return document.getElementById(id); }
 
